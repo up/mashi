@@ -1,0 +1,155 @@
+
+
+/* ### MODULE CORE ################################################################## */
+
+.mashi {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 867px;
+	height: 244px;
+  /*padding: 5px; */ 
+  background: transparent;
+  overflow: hidden;
+  position: absolute;
+  /*border: 1px solid #cecece;*/
+}
+#textframe_gp[id] { /* all exept IE6 */
+  display: table;
+}
+#textframe_p[id] { /* all exept IE6 */
+  display: table-cell; 
+  vertical-align: middle; 
+  position: static;
+}
+		
+/*
+#textframe { 
+  _position: relative; 
+  _top: -50%; 
+  _text-align: left;
+} 
+*/
+
+#textframe {
+  font-size: 45px;
+  font-weight: bold;
+ 	color: white;
+ 	text-align: center; 	
+}
+#textframe span {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+}
+#textframe span.gray {
+  font-size: 21px;
+  color: gray;
+}
+#textframe em {
+  font-size: 12px;
+  color: gray;
+  font-style: normal;
+}
+
+#textframe  a {
+  border: none;
+	text-decoration: none;
+	display:inline;
+	/*
+  padding: 2px 5px;
+  background: white;
+  color: #666;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 2px;
+  */
+}
+#textframe  a:hover,
+#textframe  a:focus {
+  /*
+  border: 1px solid #fff;
+  background: gray;
+  color: #fff;
+  */
+}
+
+/* ### MODULE PRELOADER ############################################################## */
+.preloadImages,
+#mContainer {
+  visibility:hidden;
+}
+
+#progressIndicator {
+  background: url(../images/loader.gif) center center no-repeat;
+  /*padding: 10px 0;*/
+  text-align: center;
+  height: 50%;
+  font-size: 8px;
+}
+
+
+/* ### MODULE CONTROLS ################################################################ */
+
+#mashi-controls {
+  
+}
+#mashi-controls a {
+  border: 1px solid #666;  
+	display:inline-block;
+  width:33px;
+  height:20px;
+}
+
+#controls-button-start {
+  background-image:url(../images/mashi/controls.png);
+  background-repeat:no-repeat;
+  background-position:-6px -12px;
+}
+#controls-button-start:hover {
+  background-position:-6px -57px;
+}
+
+#controls-button-stop {
+  background-image:url(../images/mashi/controls.png);
+  background-repeat:no-repeat;
+  background-position:-70px -12px;
+}
+#controls-button-stop:hover {
+  background-position:-70px -57px;
+}
+
+#controls-button-first {
+  background-image:url(../images/mashi/controls.png);
+  background-repeat:no-repeat;
+  background-position:-166px -12px;
+}
+#controls-button-first:hover {
+  background-position:-166px -57px;
+}
+
+#controls-button-last {
+  background-image:url(../images/mashi/controls.png);
+  background-repeat:no-repeat;
+  background-position:-241px -12px;
+}
+#controls-button-last:hover {
+  background-position:-241px -57px;
+}
+
+#controls-button-prev {
+  background-image:url(../images/mashi/controls.png);
+  background-repeat:no-repeat;
+  background-position:-129px -12px;
+}
+#controls-button-prev:hover {
+  background-position:-129px -57px;
+}
+
+#controls-button-next {
+  background-image:url(../images/mashi/controls.png);
+  background-repeat:no-repeat;
+  background-position:-202px -12px;
+}
+#controls-button-next:hover {
+  background-position:-202px -57px;
+}

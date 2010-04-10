@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noindex,nofollow" />
+<title>mashi demo</title>
+<style type="text/css" media="screen">
+@import url( ../stylesheets/style.css );
+@import url( ../stylesheets/mashi.css );
+</style>
+<script type="text/javascript" src="../javascripts/mashi.js"></script>
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/ie_png_fix.css" />
+	<link rel="stylesheet" type="text/css" href="../stylesheets/mashi_ie6.css" />
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/mashi_ie7.css" />
+<![endif]-->
+<script type="text/javascript">
+/* <![CDATA[ */
+
+var THEATER = new mashi.application();
+
+/* required modules */
+mashi.require('mashi.controls');
+mashi.require('mashi.preloader');
+mashi.require('mashi.object.move');
+//mashi.require('mashi.object.typewriter');
+
+/* movie parts */
+//mashi.require('user.hamlet.test');
+mashi.require('theater.intro');
+mashi.require('theater.story');
+mashi.require('theater.credits');
+
+window.onload = function() {
+    THEATER.config({
+        meta: {
+        	namespace: 'THEATER', 			// required (string)
+	        title: 'Hamlet For Dummies',	// required (string)
+	        author: 'Uli Preuss'			// required (string)
+        },
+        //display: 'screen', 				// optional (string) - default: same string as namespace
+        animation: {
+			fade: {
+          		//duration: 300, 			// optional (integer) - default: 300
+          		//steps: 10,				// optional (integer) - default: 10
+          		//start: 0,					// optional (integer) - default: 0
+          		//end: 1 					// optional (integer) - default: 1
+			},
+	        start: true,					// optional (bool) - default: false
+	        //rewind: true,					// optional (bool) - default: false
+		},
+		buttons: {
+			type: 'single'					// optional (string) none, single, movie, slideshow, all) - default: none (no buttons)
+		    //text: true,					// optional (bool) - default: false
+	        //vertical: 'bottom', 			// optional (string) - default: bottom
+	        //horizontal: 'right'			// optional (string) - default: right
+		}
+    });
+
+    //THEATER.start();
+
+	document.getElementById('m_title').innerHTML = THEATER.title;
+	document.getElementById('length').innerHTML = THEATER.getLength('sec');
+ 	document.getElementById('frames').innerHTML = THEATER.slides.length;
+ 	document.getElementById('author').innerHTML = THEATER.author;
+ 	document.getElementById('images').innerHTML = mashi.image.array.length;
+ 	document.getElementById('player').innerHTML = mashi.version;
+
+}
+/* ]]> */
+</script>
+</head>
+<body>
+	<div id="outer">
+		<div id="container">
+			<div id="inner">
+
+				<div id="logo">
+					<a href="index.htm">
+						<img src="../images/mashi/logo_small.png" alt="" />
+					</a>
+				</div>
+				
+				<div id="mainmenu" class="menu">
+					<a href="../index.htm">intro</a>
+					<a href="panorama.htm">panorama</a>
+					<span>theater</span>
+					<a href="presentation.htm">presentation</a>
+					<a href="canvas.htm">canvas</a>
+					<a href="i18n.htm">i18n</a>
+				</div>
+
+				<div id="splash">
+					<div id="THEATER" class="mashi"></div>
+				</div>
+
+				<div id="infos"> 
+					<b>META DATA &nbsp; </b> |
+					title: <span id="m_title">unknown</span> |
+					author: <span id="author">unknown</span> |
+					length: <span id="length">0</span> |
+					frames: <span id="frames">0</span> |
+					images: <span id="images">0</span> |
+					player: <span id="player">unknown</span>
+				</div>
+				<p id="copyright">
+					mashi website and all related files are copyright © 2008-2010 <a href="http://ulipreuss.eu/">uli preuss</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	//if(mashi.loaded_modules["mashi.controls"]) alert('loaded');
+	/*
+	for(x in mashi.loaded_modules)
+	{
+	alert(x +': '+ mashi.loaded_modules[x])
+	}
+	*/
+	</script>
+
+</body>
+</html>

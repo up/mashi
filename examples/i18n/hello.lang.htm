@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Error in Opera: document.evaluate fails, if doctype declaration exists. 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-->
+<html>
+	<head>
+		<title>test: i18n</title>
+	</head>
+	<body>
+		
+		<div id="select">
+			<style type="text/css">
+			span.lang { 
+				border: 1px solid #777;
+				margin: 2px;
+			}
+			span.lang:hover { 
+				background: #333;
+			}
+			span.lang,
+			span.lang label,
+			span.lang input { 
+				cursor: pointer;
+			}
+			</style>
+			<p style="margin:0">Select your language:</p>
+			<form id="language" onclick="slide_finished=true">
+				<span class="lang">
+					<input type="radio" name="lang" id="en" value="en" checked="checked" />
+					<label for="en">en</label>
+				</span>
+				<span class="lang">
+					<input type="radio" name="lang" id="de" value="de" />
+					<label for="de">de</label>
+				</span>
+				<span class="lang">
+					<input type="radio" name="lang" id="fr" value="fr" />
+					<label for="fr">fr</label>
+				</span>
+				<span class="lang">
+					<input type="radio" name="lang" id="it" value="it" />
+					<label for="it">it</label>
+				</span>
+			</form>
+		</div>
+		
+		<div id="hello">
+			<div lang="en">Hello world!</div>
+			<div lang="de">Hallo Welt!</div>
+			<div lang="fr">Salut monde!</div>
+			<div lang="it">Ciao mondo!</div>
+		</div>
+		
+	</body>
+</html>

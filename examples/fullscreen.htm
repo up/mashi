@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noindex,nofollow" />
+<title>mashi</title>
+<style type="text/css" media="screen">
+@import url( stylesheets/style.css );
+@import url( stylesheets/mashi_fullscreen.css );
+</style>
+<script type="text/javascript" src="javascripts/mashi.js"></script>
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="stylesheets/ie_png_fix.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/mashi_ie6.css" />
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="stylesheets/mashi_ie7.css" />
+<![endif]-->
+<script type="text/javascript">
+/* <![CDATA[ */
+
+var TR = new mashi.application();
+
+/* required modules */
+mashi.require('mashi.controls');
+mashi.require('mashi.object.move');
+mashi.require('mashi.slideshow.create');
+mashi.require('mashi.preloader');
+
+mashi.require('user.presentation.textreplacement');
+
+window.onload = function() {
+    TR.config({
+        meta: {
+        	namespace: 'TR', 
+	        title: 'Text Replacement'
+		},
+		animation: {
+	        start: true
+		},
+		buttons: {
+			type: 'slideshow'
+		}
+    });
+
+}
+/* ]]> */
+</script>
+</head>
+<body>
+	<div id="splash">
+		<div id="TR" class="mashi"></div>
+	</div>
+</body>
+</html>

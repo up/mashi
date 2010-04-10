@@ -1,0 +1,39 @@
+#textframe_p[id] { /* all exept IE6 */
+  vertical-align: top; 
+}
+#textframe_p { 
+  top: 0; /* for IE6 */
+  margin-top: 20px; /* for IE7 */
+}
+#textframe {
+  margin-top: 25px;
+	font-size:12px;
+	color: #CCC;
+  top: 0; /* for IE6 */
+}
+#textframe * {
+	width: 600px;
+	text-align: left;
+	margin: 0 auto;
+}
+#textframe h2 {
+	font-size:1.9em;
+	color: #859937;
+	
+}
+#textframe h3 {
+	font-size:1.6em;
+	color: #859937;
+}
+#textframe p {
+  	padding-top: 13px;
+}
+#textframe p, 
+#textframe ul {
+	font-size:1.3em;
+}
+#textframe li {
+	padding:0;
+}
+
+

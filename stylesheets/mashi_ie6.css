@@ -1,0 +1,20 @@
+#textframe_gp { 
+  overflow: hidden; 
+  position: relative !important;
+}
+#textframe_p { 
+  position: absolute; 
+  top: 50%; 
+  width: 100%; 
+  text-align: center;
+} 
+#textframe {
+  position: relative; 
+  top: -50%; 
+} 
+#textframe ul,
+#textframe li {
+	margin: 0 50px;
+	padding: 0 70px;
+}
+
