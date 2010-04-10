@@ -1,4 +1,4 @@
-Mashi is (like Dojo) available under *either* the terms of the modified BSD license *or* the
+Mashi is available under *either* the terms of the modified BSD license *or* the
 Academic Free License version 2.1. As a recipient of Mashi, you may choose which
 license to receive this code under (except as noted in per-module LICENSE
 files). Some modules may be the copyright of other authors. These
@@ -7,7 +7,7 @@ the directories in which they reside and in the code itself. No external
 contributions are allowed under licenses which are fundamentally incompatible
 with the AFL or BSD licenses that Mashi is distributed under.
 
-The text of the AFL and BSD licenses is reproduced below. 
+The text of the BSD and AFL licenses is reproduced below. 
 
 -------------------------------------------------------------------------------
 The "New" BSD License:
