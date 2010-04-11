@@ -26,7 +26,7 @@ slide_finished = false;
  (function() {
     // object literal
     mashi = {
-    	  version: "0.9.0",
+    	  version: '0.9.1',
     	  id: arguments[0],
         position: {
             X: null,
@@ -35,7 +35,7 @@ slide_finished = false;
         slide: {
             object: null,
             array: [],
-            current: "odd",
+            current: 'odd',
             odd: null,
             oddid: null,
             even: null,
@@ -66,9 +66,9 @@ slide_finished = false;
     /* MASHI DATA OBJECT - DEFAULTS */
     _MDO_ = { 
         meta : {
-        	  namespace: "MYAPP",
-            title: "none",
-            author: "unknown"
+        	  namespace: 'MYAPP',
+            title: 'none',
+            author: 'unknown'
         },
         animation : {
             fade : {
@@ -86,8 +86,8 @@ slide_finished = false;
             type: false,
             text: false,
             position : {
-                vertical: "bottom",
-                horizontal: "right"
+                vertical: 'bottom',
+                horizontal: 'right'
             }
         },
         style : {
