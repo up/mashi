@@ -87,19 +87,8 @@ blockquote {
   position: relative;
   text-align:left;
 }
-#topmenu {
-  padding-left: 20px; 
-  position: absolute;
-  text-align:left;
-  margin: -12px auto 0;
-}
-
 #mainmenu {
   font-size:17px;
-}
-#submenu {
-  margin-top: -8px;
-  font-size: 13px;
 }
 
 .menu {
@@ -137,7 +126,7 @@ blockquote {
 #logo {
   text-align: left; 
   position: absolute; 
-  top: 7px; 
+  top: -11px; 
   left: 18px; 
   width: 136px; 
   height: 39px;
