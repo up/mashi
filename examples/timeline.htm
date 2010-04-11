@@ -23,8 +23,12 @@ function callFunc(name){
 $(document).ready(function(){
 
 	var timeline = new mashi.timeline();
+	timeline.add(2000, function() {
+		$("#display").html(
+			'<p><i>This simple example combines the <b>jquery load()</b> method <br/>with the <b>mashi.timeline()</b> method</i>:</p>'
+		);
+	});
 	timeline.add('auto', function() {
-		$("#display").html('');
 		callFunc('one');
 	});
 	timeline.add('auto', function() {
@@ -44,7 +48,7 @@ $(document).ready(function(){
 	text-align: center;
 }
 #display p {
-	font-size: 20px;
+	font-size: 17px;
 }
 </style>
 </head>
