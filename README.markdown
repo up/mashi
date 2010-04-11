@@ -4,7 +4,7 @@
     |  |\/|  | |   _   |  \__  \  |   __   | |  |
     |  |  |  | |  | |  |  ___|  | |  |  |  | |  | 
     |__|  |__| |__| |__| |____ /  |__|  |__| |__|       
-    the javascript timeline toolkit        PLAYER
+    the javascript timeline toolkit
 
 # Current Status :
 
