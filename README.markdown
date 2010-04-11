@@ -18,27 +18,27 @@ In Javascript gibt es ausser 'setTimeout' und 'setInterval' keine nativen Method
 
 Um z.B. nach 5 Sekunden alle DIV unsichtbar zu machen, nutzt man 'setTimeout' wie folgt:
 
-   setTimeout( 
-      function(){
-         document.getElementsByTagName('DIV').style.visibility = "hidden";
-      }, 
-      5000
-   );
+    setTimeout( 
+       function(){
+          document.getElementsByTagName('DIV').style.visibility = "hidden";
+       }, 
+       5000
+    );
 
 Sollen nach weiteren 3 Sekunden die DIVs wieder erscheinen, dann kann das wie folgt geschehen:
 
-   setTimeout( 
-      function(){
-         document.getElementsByTagName('DIV').style.visibility = "hidden";
-         setTimeout( 
-            function(){
-               document.getElementsByTagName('DIV').style.visibility = "visible";
-            }, 
-            3000
-         );
-      }, 
-      5000
-   );
+    setTimeout( 
+       function(){
+          document.getElementsByTagName('DIV').style.visibility = "hidden";
+          setTimeout( 
+             function(){
+                document.getElementsByTagName('DIV').style.visibility = "visible";
+             }, 
+             3000
+          );
+       }, 
+       5000
+    );
 
 Spätestens nach 5 Verschachtelungen ist ein solcher Code kaum noch lesbar. 
 
@@ -46,16 +46,16 @@ Spätestens nach 5 Verschachtelungen ist ein solcher Code kaum noch lesbar.
 
 Obigen verschachtelten Code kann man mit der ersten Mashi-Version auch wie folgt schreiben: 
 
-   myapp.add( 5000, function(){
-      document.getElementsByTagName('DIV').style.visibility = "hidden";
-   });
-   myapp.add( 3000, function(){
-      document.getElementsByTagName('DIV').style.visibility = "visible";
-   });
+    myapp.add( 5000, function(){
+       document.getElementsByTagName('DIV').style.visibility = "hidden";
+    });
+    myapp.add( 3000, function(){
+       document.getElementsByTagName('DIV').style.visibility = "visible";
+    });
 
 Oder allgemeiner:
 
-   MASHIOBJECT.add( DURATION, FUNCTION);
+    MASHIOBJECT.add( DURATION, FUNCTION);
 
 
 ##Funktionsweise:
