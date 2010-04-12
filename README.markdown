@@ -14,7 +14,7 @@ Development [v0.9.1](http://semver.org/)
 
 ###The Problem
 
-Without 'setTimeout' und 'setInterval' there are no native Methods in Javascript to define time controlled actions.
+Except 'setTimeout' und 'setInterval' there are no native Methods in Javascript to define time controlled actions.
 
 If we want to hide all 'div' elements in a page after 5 seconds, we can use 'setTimeout' like this:
 
