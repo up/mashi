@@ -12,11 +12,11 @@ Development [v0.9.1](http://semver.org/)
 
 ##The Idea Behind
 
-### Das Problem
+###The Problem
 
-In Javascript gibt es ausser 'setTimeout' und 'setInterval' keine nativen Methoden, um zeitgesteuert Aktionen ablaufen zu lassen.
+Without 'setTimeout' und 'setInterval' there are no native Methods in Javascript to define time controlled actions.
 
-Um z.B. nach 5 Sekunden alle DIV unsichtbar zu machen, nutzt man 'setTimeout' wie folgt:
+If we want to hide all 'div' elements in a page after 5 seconds, we can use 'setTimeout' like this:
 
     setTimeout( 
        function(){
@@ -25,7 +25,7 @@ Um z.B. nach 5 Sekunden alle DIV unsichtbar zu machen, nutzt man 'setTimeout' wi
        5000
     );
 
-Sollen nach weiteren 3 Sekunden die DIVs wieder erscheinen, dann kann das wie folgt geschehen:
+Should they appear again after another 3 seconds, this can be done like this:
 
     setTimeout( 
        function(){
@@ -40,11 +40,11 @@ Sollen nach weiteren 3 Sekunden die DIVs wieder erscheinen, dann kann das wie fo
        5000
     );
 
-Spätestens nach 5 Verschachtelungen ist ein solcher Code kaum noch lesbar. 
+Such kind of code become unreadable at the latest after 5 nestings. And there is no way to set the duration one of the (time)frames automaticly, if the frame functions ends.
 
-###Der Lösungsansatz
+###The mashi way
 
-Obigen verschachtelten Code kann man mit der ersten Mashi-Version auch wie folgt schreiben: 
+Above code can be written in mashi with the following lines:
 
     myapp.add( 5000, function(){
        document.getElementsByTagName('DIV').style.visibility = "hidden";
@@ -53,27 +53,21 @@ Obigen verschachtelten Code kann man mit der ersten Mashi-Version auch wie folgt
        document.getElementsByTagName('DIV').style.visibility = "visible";
     });
 
-Oder allgemeiner:
+##How it works:
 
-    MASHIOBJECT.add( DURATION, FUNCTION);
+In the first step the script reads instructions of the frames in an array ein. In a second step the script loop through the array. This step in detail:
 
-
-##Funktionsweise:
-
-Das Script liest im ersten Schritt die Anweisungen der jeweiligen Frames (so werden innerhalb von mashi die einzelnen add-Anweisungen genannt) in ein Array ein. In einem zweiten Schritt wird das Array durchlaufen. Dieser Schritt im Detail:
-
-* Der erste Frame wird gestartet
-* Gleichzeitig wird ein Timer gestartet
-* Dabei wird in kurzen Abständen per setInterval überprüft, ob die angegebene Dauer (duration) bis zur Ausführung schon erreicht wurde.
-* Falls nein, läuft der Timer weiter. 
-* Falls ja, wird die Funktion aufgerufen 
-* und ein neuer Frame und Timer gestartet (siehe 1. und 2.)
-* usw., bis der letzte Frame durchlaufen und die letzte Funktion aufgerufen wurde.
+* Starting the first frame. Simultaneously a timer was started.
+* At short intervals the script checks, if the frame duration is reached. 
+* If not - the timer runs onward.
+* If yes - the timer stops and the script invokes the frame function  
+* Now a new timer (respectively frame) get starting
+* And so on until the last frame ends
    
 
-##Die Anwendung
+##The Application
 
-Bei der Entwicklung kam dann schnell die Idee, auf Basis diesen kleinen Scripts eine Art 'Flash-Player' weiter zu entwickeln, mit dem man 'Flash-ähnliche' Anwendungen mit Webstandards (HTML, CSS und Javascript) erstellen kann.   
+Bei der Entwicklung kam dann schnell die Idee, auf Basis diesen kleinen Scripts eine Art 'Player' weiter zu entwickeln, mit dem man 'Flash-ähnliche' Anwendungen mit Webstandards (HTML, CSS und Javascript) erstellen kann.   
 
 
 
