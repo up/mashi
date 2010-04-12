@@ -137,6 +137,7 @@
         };
         _m_.object.prototype.appear = function(x, y, duration) {
             var _object = this.obj;
+            _ma_.setOpacity(_object.id, '0');
             _object.style.left = x + "px";
             _object.style.top = y + "px";
             // TODO: Is there a way to fade transparent png fixed images in ie
