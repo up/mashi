@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="noindex,nofollow" />
-<title>mashi I18N demo</title>
+<title>mashi advertising demo</title>
 <style type="text/css" media="screen">
 @import url( ../stylesheets/style.css );
 @import url( ../stylesheets/mashi.css );
@@ -16,39 +16,61 @@
 <!--[if IE 7]>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/mashi_ie7.css" />
 <![endif]-->
+<style type="text/css">
+#splash {
+	background-color: black;
+	border: 0px solid #222;
+	height: 578px;
+	width: 160px;
+	padding: 0px; 
+	position: relative;
+	text-align:left;
+}
+.mashi {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 578px;
+	width: 160px;
+	background: transparent;
+	overflow: hidden;
+	position: absolute;
+}
+
+</style>
 <script type="text/javascript">
 /* <![CDATA[ */
-var I18N = new mashi.application();
+
+var FRAMES = new mashi.application();
+
+/* required modules */
+mashi.require('mashi.controls');
 mashi.require('mashi.preloader');
 mashi.require('mashi.object.move');
 
-mashi.require('i18n.hello');
+/* movie parts */
+mashi.require('advertising.content');
 
 window.onload = function() {
-
-   I18N.config({
+    FRAMES.config({
         meta: {
-        	namespace: 'I18N',
-	        title: 'I18N example',
-	        author: 'Uli Preuss'
+        	namespace: 'FRAMES', 
+	        title: '',
+	        author: ''	
         },
-        animation: {
-	        start: true
-		}
+        animation : {
+            start: true,
+            rewind: true,
+            accessible: 'text'
+        }
+		
     });
-
-	I18N.$('m_title').innerHTML = I18N.title;
- 	I18N.$('frames').innerHTML = I18N.slides.length;
- 	I18N.$('author').innerHTML = I18N.author;
- 	I18N.$('images').innerHTML = mashi.image.array.length;
- 	I18N.$('player').innerHTML = mashi.version;
+	//FRAMES.start();
 
 }
 /* ]]> */
 </script>
 </head>
 <body>
-
 	<div id="outer">
 		<div id="container">
 			<div id="inner">
@@ -63,24 +85,16 @@ window.onload = function() {
 					<a href="../index.htm">intro</a>
 					<a href="timeline.htm">timeline</a>
 					<a href="panorama.htm">panorama</a>
-					<a href="theater.htm">theater</a>
+					<span>advertising</span>
 					<a href="presentation.htm">presentation</a>
 					<a href="canvas.htm">canvas</a>
-					<span>i18n</span>
-				</div>
-				
-				<div id="splash">
-					<div id="I18N" class="mashi"></div>
+					<a href="i18n.htm">i18n</a>
 				</div>
 
-				<div id="infos"> 
-					<b>META DATA &nbsp; </b> |
-					title: <span id="m_title">unknown</span> |
-					author: <span id="author">unknown</span> |
-					frames: <span id="frames">0</span> |
-					images: <span id="images">0</span> |
-					player: <span id="player">unknown</span>
+				<div id="splash">
+					<div id="FRAMES" class="mashi"></div>
 				</div>
+
 				<p id="copyright">
 					mashi website and all related files are copyright © 2008-2010 <a href="http://ulipreuss.eu/">uli preuss</a>
 				</p>

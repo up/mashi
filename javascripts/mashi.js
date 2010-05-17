@@ -28,6 +28,7 @@ slide_finished = false;
     mashi = {
     	  version: '0.9.1',
     	  id: arguments[0],
+    	  namespace: null,
         position: {
             X: null,
             Y: null
@@ -102,6 +103,8 @@ slide_finished = false;
     // application constructor
     mashi.application = function() {
       
+        _m_.self = this;
+        
         this.config = function(c) {
 
             // OPTIONS
@@ -324,6 +327,7 @@ slide_finished = false;
                         clearInterval(_m_.slide.interval);
                         if (_m_.rewind === true) {
                             _ma_.flipToNumber(0);
+                            _ma_.start();
                         }
                         if (_m_.buttons.type === "single") {
                             _ma_.$('controls-button-start').style.display = "inline-block";

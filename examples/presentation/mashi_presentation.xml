@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Error in Opera: document.evaluate fails, if doctype declaration exists. 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-->
+<html>
+<head>
+<title>test: presentation</title>
+</head>
+<body>
+
+	<div>
+		<h2>Mashi.</h2>
+		<p>
+			Online Entwicklungsumgebung 
+			auf Basis eines selbst entwickelten JavaScript Timeline Frameworks.
+		</p>
+	</div>
+	
+	<div>
+		<h2>Mashi.</h2>
+		<p>
+			Online Entwicklungsumgebung 
+			auf Basis eines selbst entwickelten JavaScript Timeline Frameworks.
+			<br/><br/>
+			Zur intuitiven Gestaltung von Flash- und Powerpoint-ähnlichen interaktiven 
+			Multimedia Präsentationen mittels standardisierter Webtechnologien.
+		</p>
+	</div>
+	
+</body>
+</html>

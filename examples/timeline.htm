@@ -3,15 +3,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="noindex,nofollow" />
-<title>mashi</title>
+<title>mashi simple timeline demo (with jQuery)</title>
 <style type="text/css" media="screen">
 @import url( ../stylesheets/style.css );
 </style>
 <script type="text/javascript" src="../javascripts/jquery.js"></script>
 <script type="text/javascript" src="../javascripts/mashi.js"></script>
 <script type="text/javascript">
+/* <![CDATA[ */
 function callFunc(name){
-    $("#display").append('<div id="' + name + '></div>');
+    $("#display").append('<div id="' + name + '><' + '/div>');
     $("#display div#" + name).load(
 		"timeline/script.php?action=" + name,
 		function(){ 
@@ -25,7 +26,8 @@ $(document).ready(function(){
 	var timeline = new mashi.timeline();
 	timeline.add(2000, function() {
 		$("#display").html(
-			'<p><i>This simple example combines the <b>jquery load()</b> method <br/>with the <b>mashi.timeline()</b> method</i>:</p>'
+			'<p><i>This simple example combines the ' + 
+			'<b>jquery load()<' + '/b> method <br/>with the <b>mashi.timeline()<' + '/b> method<' + '/i>:<' + '/p>'
 		);
 	});
 	timeline.add('auto', function() {

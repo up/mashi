@@ -1,7 +1,7 @@
 /*
 	Copyright (c) 2008-2009, Uli Preuss All Rights Reserved.
 	Available via Academic Free License >= 2.1 OR the modified BSD license.
-	see: http://mashi.tv/license for details
+	See: http://mashi.tv/license for details
 */
 (function() {
 
@@ -12,7 +12,7 @@
         _mao_.zindex = 500; 
     }
     _m_.object = function(param) {
-      var id = param.id;
+      var id = param.id;    
       var image_url = param.bgimage;
       var width = param.width;
       var height = param.height;

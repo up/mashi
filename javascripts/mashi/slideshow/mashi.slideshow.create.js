@@ -72,8 +72,8 @@
               }
              }
              for (var i=0;i<this.slides.length;i++) {
-                 TR.add("auto", function() {
-                   TR.set({ 
+                 _m_.self.add("auto", function() {
+                   _m_.self.set({ 
                      //html: style + _self.slides[_m_.slide.num]
                      html: _self.slides[_m_.slide.num],
                      style: {
