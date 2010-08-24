@@ -1,0 +1,24 @@
+#Free and Open Source Software (FOSS)
+
+In 1985 a programmer at MIT named Richard Stallman founded the Free Software Foundation (FSF) whose goal was to promote and support his new free software movement. The key foundation in this was the creation of the GNU General Public License (GPL), a license for the new software allowing any user of the software access to the source code and the rights to modify and redistribute any changed version. This software does not necessarily have to be provided monetarily free but frequently is [Stallman, 2002]. 
+
+In 1991 Linus Torvalds, a student at the University of Helsinki, decided to create a kernel to better learn about computer hardware. He publicly released this under the GPL license. This is now the core of the Linux operating system, now an important part of many businesses such 
+as Google, Novell, HP, Red Hat and IBM. Since Linux was created companies have been open-sourcing previously proprietary solutions. Two large examples of this was Sun releasing the code for StarOffice, which became OpenOffice.org and Netscape releasing the source for Netscape Communicator, which became Mozilla's Firefox and other projects. 
+
+Nichols and Twidale further elaborate on this problem, showing that software developers are not suitable at designing user interfaces for non-technical users [Nichols and Twidale, 2003]. To fix this imbalance, software firms hire usability experts but open-source suffers in this area. As previously mentioned, there are some usability experts contributing to open-source software, but there are far fewer than needed working with FOSS. They also highlight that, due to the frequently self-motivated functionality improvements, technical users may be less likely to work on features for novice users. This difference in motivation is a major difference between FOSS and commercial development, with commercial developers focusing on user satisfaction as the primary goal whereas with FOSS this may be secondary to nonexistent. 
+
+Software communities tend to have a gender bias (only 28% women), the FOSS has an even more dramatic bias with around 1.5% of FOSS community members being female. Deliverable claims that women are actively (if unconsciously) excluded rather than passively disinterested  [Deliverable, 2006]. He explains this is due to a decreasing proportion of women in ICT professions and that women in FOSS projects tend to do graphics, usability and documentation rather than the more 'prestigious'  software development. This points back to the lack of usability specialists and other non-programmers in FOSS. 
+
+Many projects suffer from lack of organisation or a clear set of goals. As a result, it's unusual to find projects where the users dictate the roadmap for a piece of software, but is instead decided by the main core developers or a so-called 'Benevolent Dictator'. In the case of the Linux kernel, this dictator is the original creator, Linus Torvalds. He decides on the inclusion or rejection of new features or modifications to existing features. This power is occasionally criticised, but the dictatorship is supported by the masses as, due to the GPL, the project could be forked, that is modified and continued along a different path with a different development/leadership team.
+
+
+###Source / Read more:
+http://mikearthur.co.uk/~mike/work/community.pdf
+
+###Literature:
+* D. Deliverable. Free/Libre and Open Source Software: Policy Support. March 2006.
+* D.M. Nichols and M.B. Twidale. The Usability of Open Source Software. First Monday, 8(1): 59 67, 2003.
+* R. Stallman. What is Free Software. Free Society: Selected Essays of Richard M, 2002. 
+
+
+

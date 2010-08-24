@@ -1,0 +1,80 @@
+#Module Reference - mashi.slideshow
+
+Creates a slideshow app from an XML document with a XHTML subset.
+
+#####Integration
+
+	mashi.module('mashi.slideshow');
+	
+#####Methods
+
+######create()
+
+	mashi.slideshow.create({
+	  source: STRING, // required (Path to content XML file)
+	  bgimage: STRING // optional (Path to slideshow background image)
+	});
+		
+#####Example
+
+	mashi.slideshow.create({
+	  source: 'content/textreplacement.xml',
+	  bgimage: 'content/images/bg.jpg'
+	});
+
+#####XML Structure
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<html>
+	  <head>
+	    <title>test: presentation</title>
+	  </head>
+	  <body>
+
+	    <!-- Slide 1 -->
+	    <div>
+		  <h2>Header 2</h2>
+		  <p>Para</p>
+		  <p>Para</p>
+	    </div>
+	    <!-- END Slide 1 -->
+	
+	    <!-- Slide 2 -->
+	    <div>		
+	      <h3>Header 3</h3>
+	      <p>Para</p>
+	      <p>
+	        <b>Pros</b>:
+	        <ul>
+	          <li>list item 1</li>
+	          <li>list item 2</li>
+	          <li>list item 3</li>
+	        </ul>
+	      </p>
+	      <p>
+	        <b>Cons</b>:
+	        <ul>
+	          <li>list item 1</li>
+	          <li>list item 2</li>
+	        </ul>
+	      </p>
+	    </div>
+	    <!-- END Slide 2 -->
+	
+	  </body>
+	</html>	
+		
+#####DOCTYPE Error in Opera
+
+The internal method document.evaluate fails in Opera, if a doctype declaration exists. If you want to validate the XML file, please remove the doctype declaration or comment it out before publishing:
+
+	<?--
+	<!DOCTYPE 
+	  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	-->
+	
+	
+	
+	
+	

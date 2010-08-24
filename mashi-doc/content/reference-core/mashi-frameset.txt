@@ -1,0 +1,19 @@
+#Core Reference - mashi.frameset
+
+Load frameset method (from external JS files)
+
+#####Syntax
+
+	mashi.frameset(FRAMESET-NAME);
+	
+#####Example
+
+	var app = new mashi.application();
+
+	/* load app parts */
+	mashi.frameset('content.intro');
+	mashi.frameset('content.story');
+	mashi.frameset('content.credits');
+	
+	
+

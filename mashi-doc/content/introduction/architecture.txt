@@ -1,0 +1,44 @@
+#Architecture
+
+#####1. Web standards only
+
+To develop Mashi apps you only need (X)HTML, Cascading Stylesheets, JavaScript and maybe some images for decoration.
+
+#####2. Modularization
+
+The Mashi toolkit consists of the player 'mashi.js' and some modules.
+
+Following modules are loaded dynamically when needed:
+
+* **Preloader**: preloads all images set in frames before a Mashi app starts.
+* **Controls**: Start, Stop, first frame, previous frame, next frame, last frame buttons in diffenrent combinations.
+* **Object**: Appering, disappearing and moving objects on the stage.
+* **Slideshow**: makes presentations out of special structured XHTML pages.
+* **Helper**: Different helper methods used internally and loaded on runtime when needed.
+
+<a href="javascript:loadContent('reference-modules/intro-modules', 'Module Reference: Introduction')">Read more about modules</a> 
+
+
+#####3. Standalone App
+
+A Mashi app is a so called 'standalone application' which means that there are no extra plugins, players or add-ons needed. Mashi apps run online and offline in every modern web browser and may be published in a ZIP file for download.
+
+A Mashi app consists of a 'system' and a 'application' directory and eventually a 'plugin' directory. The core player, the modules and graphics the are located in the 'system' directory. The content of a Mashi app, like images, layout, styles and the frameset(s) are located in the 'application' directory.
+
+#####4. Extensibility
+
+You can write your own plugins with new methods or objects, if you need more functionality.
+
+We are planing to provide a platform where every plugin developer can publish their plugins on the Mashi web site after a short review by the Mashi core team members.
+
+
+#####5. Community driven development
+
+Mashi was developed by a small team with a small set of functionality. It was obvious from the beginning that here will be more functions necessary in future and that we want  this process to be community-driven.
+
+New plugins should be discussed by the community and the decision, whether a plugin should become a standard module delivered with future versions aof Mashi or not should also be left up to the community.
+
+Please take part in the future development process! Send in your bug reports and discuss various topics like new features in the Mashi forums.
+
+
+

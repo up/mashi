@@ -1,0 +1,38 @@
+#Module Reference - Introduction
+
+The Mashi Toolkit provides a set of basic (core) methods and differents modules that can be loaded dynamically.
+
+You will find descriptions of these Mashi methods in this part of the documentation.
+
+####<a href="javascript:loadContent('reference-modules/mashi-controls', 'Module Reference » mashi.controls')">mashi.controls</a> 
+
+The module 'Controls' provides buttons for controlling a Mashi app.
+
+####<a href="javascript:loadContent('reference-modules/mashi-preloader', 'Module Reference » mashi.preloader')">mashi.preloader</a> 
+
+The module 'Preloader' preloads all images used in frames or framesets (.png / .jpg / .jpeg /.gif).
+
+####<a href="javascript:loadContent('reference-modules/mashi-object', 'Module Reference » mashi.controls')">mashi.object</a> 
+
+Creates objects on the stage.
+
+####<a href="javascript:loadContent('reference-modules/mashi-object-animation', 'Module Reference » mashi.object.animation')">mashi.object.animation</a> 
+
+Extends the 'mashi.object' with a method for animation.
+
+####<a href="javascript:loadContent('reference-modules/mashi-object-typewriter', 'Module Reference » mashi.object.typewriter')">mashi.object.typewriter</a> 
+
+Extends the 'mashi.object' with a method that creates a typewriter effect.
+
+####<a href="javascript:loadContent('reference-modules/mashi-slideshow', 'Module Reference » mashi.slideshow')">mashi.slideshow</a>
+
+Creates a slideshow app from an XML document with a XHTML subset.
+ 
+####<a href="javascript:loadContent('reference-modules/mashi-helper', 'Module Reference » mashi.helper')">mashi.helper</a> 
+
+The module 'Helper' provides a couple of helper methods for handling strings, arrays, cookies, elements, layouts and other purposes.
+
+####<a href="javascript:loadContent('reference-modules/mashi-IEhacks', 'Module Reference » mashi.IEhacks')">mashi.IEhacks</a> 
+
+The module mashi.IEhacks contains all hacks for the different versions of the Microsoft Internet Explorer.
+

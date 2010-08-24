@@ -1,0 +1,113 @@
+#Markdown Syntax
+
+Markdown is a Lightweight markup language, originally created by John Gruber and Aaron Swartz, which aims for maximum readability and “publishability” of both its input and output forms, taking many cues from existing conventions for marking up plain text in email. Markdown converts its marked-up text input to valid, well-formed XHTML and replaces left-pointing angle brackets (&lt;) and ampersands with their corresponding character entity references. Markdown was originally implemented in Perl by Gruber, but has since been re-implemented by others in a variety of programming languages. It is distributed under a BSD-style license and is included with, or available as a plugin for, several content management systems.
+
+This is not an exhaustive listing of Markdown's syntax, and in many cases multiple styles of syntax are available to accomplish a particular effect. See the full [Markdown syntax](http://daringfireball.net/projects/markdown/syntax "link title here") for more information. Characters which are ordinarily interpreted by Markdown as formatting commands will instead be interpreted literally if preceded by a backslash; for example, the sequence '\*' would output an asterisk rather than beginning a span of emphasized text. Markdown also does not transform any text within a "raw" block-level XHTML element; thus it is possible to include sections of XHTML within a Markdown source document by wrapping them in block-level XHTML tags.
+
+##Paragraphs
+
+A paragraph is one or more consecutive lines of text separated by one or more blank lines. Normal paragraphs should not be indented with spaces or tabs:
+
+	This is a paragraph. It has two sentences.
+
+	This is another paragraph. It also has two sentences.
+
+This is a paragraph. It has two sentences.
+
+This is another paragraph. It also has two sentences.
+
+##Line return
+
+Line breaks inserted in the text are removed from the final result: the web browser is in charge of breaking the lines depending of the available space. To force a line break, insert two spaces at the end of the line.
+
+##Emphasized text
+
+	*emphasis* (e.g., italics)
+
+	**strong emphasis** (e.g., boldface)
+
+*emphasis* (e.g., italics)
+
+**strong emphasis** (e.g., boldface)
+
+##Code
+
+	`code`
+
+##Lists
+
+	* An item in a bulleted (unordered) list
+	* Another item in a bulleted list
+
+	1. An item in an enumerated (ordered) list
+	2. Another item in an enumerated list
+
+##Headings
+
+HTML headings are produced by placing a number of hashes before the header text corresponding to the level of heading desired (HTML offers six levels of headings), like so:
+
+	# First-level heading
+
+	#### Fourth-level heading
+
+The first two heading levels also have an alternate syntax:
+
+	First-level heading
+	===================
+
+	Second-level heading
+	--------------------
+
+##Blockquotes
+
+	> This text will be enclosed in an HTML blockquote element.
+	> Blockquote elements are reflowable. You may arbitrarily
+	> wrap the text to your liking, and it will all be parsed
+	> into a single blockquote element.
+
+The above would translate into the following HTML:
+
+	<blockquote><p>This text will be enclosed in an HTML blockquote element. Blockquote
+	elements are reflowable. You may arbitrarily wrap the text to your liking, and it will all
+	be parsed into a single blockquote element.</p></blockquote>
+
+##Links
+
+Links may be included inline:
+
+	[link text here](link.address.here "link title here")
+	
+
+Alternatively, links can be placed in footnotes outside of the paragraph, being referenced with some sort of reference tag. For example, including the following inline:
+
+	[link text here][linkref]
+
+would produce a link if the following showed up outside of the paragraph (or at the end of the document):
+
+	[linkref]: link.address.here "link title here"
+
+##Images
+
+Referring to images is similar to including links. The syntax requires an exclamation point to indicate the link refers to an image.
+
+The image address may be included inline, as with links:
+
+	![Alt text here](Image URL here "Image title here")
+
+It may also be referred to via a reference:
+
+	![Alt text here][imageref]
+
+Here, imageref refers to information somewhere after the image:
+
+	[imageref]: image.url.here "Image title here"
+
+##Horizontal rules
+
+Horizontal rules are created by placing three or more hyphens, asterisks, or underscores on a line by themselves. You may use spaces between the hyphens or asterisks. Each of the following lines will produce a horizontal rule:
+
+	* * *
+	***
+	*****
+	- - -
+	---------------------------------------

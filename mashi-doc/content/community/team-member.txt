@@ -1,0 +1,16 @@
+#Become a team member
+
+###Join us
+
+We would greatly appreciate any participation in the Mashi project. Whether you are a developer of Mashi artwork (graphics design), Mashi plugins or the Mashi core itself, just drop us a line!
+
+Wir freuen uns auf
+
+- Grafik-Designer, die Mashi-Anwendern mit freien Grafiken (Hintergrundbilder, Icons, Avatare etc.) versorgen würden,
+- Mashi-Drehbuchautoren, die interessante Film-Drehbücher schreiben,
+- Plugin-Entwickler, die die Mashi-Funktionalität erweitern,
+- Core-Entwickler, die sich um Mashi selbst und diverse Sicherheitsaspekte kümmern würden,
+- Front-end-Experten, die sich um die Einhaltung von Web-Standards in der Mashi-Entwicklung und vielleicht auch um die Barrierfreiheit (Stichwort: <abbr title="accessibility for rich internet applications">ARIA</abbr>) kümmern können.
+- und jede Person, die Ideen und Visionen hat, wohin Mashi gehen soll.
+
+Wenn dir Mashi gefällt und du denkst, du könntest etwas dazu beitragen, bitte melde dich bei uns (Per <a href="mailto:alp@mashi.tv">E-Mail</a> oder in den <a href="http://mashi.tv/community">Foren</a>)

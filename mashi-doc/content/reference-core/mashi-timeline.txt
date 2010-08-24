@@ -1,0 +1,28 @@
+#Core Reference - mashi.timeline
+
+Base Timeline Method
+
+#####Syntax
+
+	var INSTANCE = new mashi.timeline();
+
+#####Methods
+
+	INSTANCE.add(DURATION, CALLBACK);
+	INSTANCE.start();
+
+#####Example:
+	var timeline = new mashi.timeline();
+
+	timeline.add(2000, function() {
+	  // do something after 2 seconds
+	});
+	
+	timeline.add(1000, function() {
+	  // do something after 1 second
+	});
+	
+	document.onload = function() {
+	  timeline.start();
+	}
+

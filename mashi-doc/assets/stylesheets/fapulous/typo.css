@@ -1,0 +1,117 @@
+/**
+*
+* @note                           css file for typography
+* 
+* @appdef                         fapulous framework
+* @app-myapp-theme  
+* @app-myapp-used                 True
+* @media                          screen
+* @valid                          true
+* 
+* @author                         Alp Uçkan
+* @version                        1.1
+* @link                           http://fapulous.77elements.net/
+* @copyright                      Copyright(c) by Alp Uçkan
+* @license                        http://sam.zoy.org/wtfpl/
+* 
+* @date                           2008-09-22
+* @lastmodified                   2009-10-04 17:24
+* 
+* @-fontsizedef-                  1.7500em = 28px
+* @-fontsizedef-                  1.6250em = 26px
+* @-fontsizedef-                  1.5000em = 24px
+* @-fontsizedef-                  1.3750em = 22px
+* @-fontsizedef-                  1.2500em = 20px
+* @-fontsizedef-                  1.1250em = 18px
+* @-fontsizedef-                  1.0000em = 16px
+* @-fontsizedef-                   .9375em = 15px
+* @-fontsizedef-                   .8750em = 14px
+* @-fontsizedef-                   .8125em = 13px
+* @-fontsizedef-                   .7500em = 12px
+* @-fontsizedef-                   .6250em = 10px
+* @-fontsizedef-                   .4375em =  7px
+* @-fontsizedef-                   .0625em =  1px
+*
+* @colordef                       rgb(0,0,0); Black; Text
+* @colordef                       rgb(255,255,255); White; Background
+*/
+
+/**
+* @section                        setting font and font-sizes
+* 
+*                                 see "How to size text using ems" on clagnut.com for details
+*                                 (http://www.clagnut.com/blog/348/)
+*/
+
+html                              { font-size: 100.01%; } /* equals default size of 16px in most browsers */
+body                              { font-size: 62.5%; } /* reduces font size of 16px to 10px so that 1em defaults to 10px */
+#MightyContainer                  { font-size: 1.6em; } /* <--- set average font size here / 1.6 X 10 = 16px */  
+
+li li,
+li p,
+td p,
+blockquote p                      { font-size: 1em; /* prevent shrinking in nested elements */ } 
+
+/**
+* @section                        Headers
+*/
+
+h1, h2, h3, h4, h5, h6            { margin: 0 0 .6250em; padding: 0; font-weight: normal; line-height: 1.5; }
+h1                                { font-size: 2.0000em; margin: 0; }
+h2                                { font-size: 1.6250em; }
+h3                                { font-size: 1.5000em; }
+h4                                { font-size: 1.2500em; }
+h5                                { font-size: 1.1250em; }
+h6                                { font-size: 1.0000em; }
+
+/**
+* @section                        Text
+*/
+
+p                                 { margin: 0 0 1.25em; padding: 0; line-height: 1.5; }
+li                                { line-height: 1.5; }
+* html p.last                     { margin: 0; padding: 0 0 1.25em; } /* IE6 work around */
+.big                              { font-size: 1.1250em; }
+.small                            { font-size: .9375em; }
+em                                { letter-spacing: .04em; font-style: italic; }
+strong                            { font-weight: bold; }
+strong.cite                       { font-weight: normal; }
+del                               { text-decoration: line-through; }
+ins                               { background-color: #ff9; color: #000; text-decoration: none; }
+mark                              { background-color:#ff9; color:#000; font-style: italic; font-weight: bold; }
+acronym,
+abbr,
+dfn                               { border-bottom: 1px dotted #000; cursor: help; }
+hr                                { display: block; margin: 1.25em 0; padding: 0; height: 1px; border: 0; border-top: 1px solid #ccc; }
+blockquote                        { margin: 0 3em 2em 2em; padding: 0; }
+blockquote p:before,
+q:before,
+.cite:before                      { content: "\00BB"; }
+blockquote p:after,
+q:after,
+.cite:after                       { content: "\00AB"; }
+
+/**
+* @section                        use <ul class="content">....</ul> to display bullet lists
+*/
+
+ul.content,
+ol.content                        { margin: 0 0 1.1250em 1.1250em; padding: 0; line-height: 1.5; }
+ul.content li                     { margin: 0 0 .6250em; list-style-type: disc; }
+ol.content li                     { margin: 0 0 .6250em; list-style-type: decimal; }
+
+/**
+* @section                        simple "read more" links
+*/
+
+.more                             { text-align: left; }
+.more a:after                     { content: "\00BB"; }
+
+/**
+* @section                        code
+*/
+
+code, pre                         { font: .8125em 'Monaco', 'Consolas', 'Lucida Console', 'Nimbus Mono L', 'Courier New', 'Courier', monospace; }
+pre                               { display: block; overflow: auto; margin: 0 0 1.25em; padding: 1.25em .6250em; white-space: pre; line-height: 1.25; }
+/*                                not valid css */
+pre                               { white-space: pre-wrap; /* CSS3 */ white-space: -moz-pre-wrap; /* Gecko */ white-space: -pre-wrap; /* Opera 4-6 */ white-space: -o-pre-wrap; /* Opera 7+ */ word-wrap: break-word; /* IE 5.5+ */ }

@@ -1,0 +1,120 @@
+#Module Reference - mashi.helper
+
+The module 'Helper' provides a couple of helper methods for handling strings, arrays, cookies, elements, layouts and other purposes. 
+
+This module is also used internally by other modules. It is no problem to explicitly integrate this module, because other modules always test, wether 'mashi.module' is allready loaded or not.
+
+#####Integration
+
+	mashi.module('mashi.helper');
+
+
+
+####Style Helper
+
+Helper methods for handling CSS properties and classes
+
+######getStyle(ID, STYLE-PROPERTY)
+
+Find out a specific property of a specific element or ID.
+
+	var elementPosition = _mhelper_.getStyle('myDiv', 'position');
+
+######hasClass(NODE, CLASS-NAME)
+
+Test to see if an element has a specific CSS class.
+
+	var myNode = document.getElementById('myDiv');	
+	var myElementHasAClass = _mhelper_.hasClass(myNode, 'wrapper');
+
+######removeClass(NODE, CLASS-NAME)
+
+Remove a CSS class of a specific element
+
+	var myNode = document.getElementById('myDiv');	
+	_mhelper_.removeClass(myNode, 'wrapper');
+
+######addClass(NODE, CLASS-NAME)
+
+Add a CSS class to an element
+
+	_mhelper_.addClass(obj, 'wrapper');
+
+
+####Element Helper
+
+######removeChildNodes(NODE)
+
+Remove all child nodes of an element (a little bit more elegant than NODE.innerHTML = '')
+
+	var myNode = document.getElementById('myDiv');	
+	_mhelper_.removeChildNodes(myNode);
+
+######removeChildNodesByClassName(NODE, CLASS-NAME)
+
+Remove all child nodes of an element with a specific css class.
+
+	var myNode = document.getElementById('myDiv');	
+	_mhelper_.removeChildNodesByClassName(myNode, 'wrapper');
+
+######findPosY(NODE)
+	
+Calculate the distance of an element to the upper screen border.
+
+	// (c) Peter-Paul Koch
+	var myNode = document.getElementById('myDiv');	
+	var elementTop = _mhelper_.findPosY(myNode);
+
+######findPosX(NODE)
+
+Calculate the distance of an element to the left screen border.
+
+	// (c) Peter-Paul Koch
+	var myNode = document.getElementById('myDiv');	
+	var elementLeft = _mhelper_.findPosX(myNode);
+
+
+
+####Cookie Helper
+
+######setCookie( name, value, expiredays )
+
+Set a cookie.
+
+	_mhelper_.setCookie( 'user', 'identified', 7 );
+
+######getCookie( name )
+
+Read the content of a cookie.
+
+	var cookieValue = _mhelper_.getCookie( 'user' );
+  
+
+
+####String Helper
+
+######trim()
+
+Remove empty spaces on the right and left side of a string.
+
+	// (c) Douglas Crockford
+	var myString = "     Hello World!   ";
+	var myTrimedString = myString.trim();
+	
+	// Result: myTrimedString = "Hello World!";
+
+
+
+####Array Helper
+
+######array_unique(arrayName)
+
+This function returns an array with unique elements.
+
+	var myArray = new Array( 1, 2, 1, 2, 3, 4, 1 )
+	var myArrayUnique = _mhelper_.array_unique( myArray );
+	
+	// Result: myArrayUnique = [1, 2, 3, 4];
+	
+
+

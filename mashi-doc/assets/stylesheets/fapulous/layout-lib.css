@@ -1,0 +1,220 @@
+/**                                       
+*                                         
+* @note                                   css file for layout elements
+*                                         
+* @appdef                                 fapulous framework
+* @app-myapp-theme                        
+* @app-myapp-used                         True
+* @media                                  screen
+* @valid                                  true
+*                                         
+* @author                                 Alp Uçkan
+* @version                                1.1
+* @link                                   http://fapulous.77elements.net/
+* @copyright                              Copyright(c) by Alp Uçkan
+* @license                                http://creativecommons.org/licenses/GPL/2.0/
+*                                         
+* @date                                   2008-09-22
+* @lastmodified                           2010-01-29 13:06
+*                                         
+*                                         PX        EM (1em=16px)          %
+*---------------------------------        -------------------------------------------------
+* @layout-width                           980px       61.2500em          100.000%
+* @layout-padding-macro                    20px        1.2500em            
+* @layout-padding-micro                    10px         .6250em            
+*---------------------------------        -------------------------------------------------
+*                                         
+* @colordef                               rgb(0,0,0); Black; Text
+* @colordef                               rgb(255,255,255); White; Background
+*/
+
+/**                                       
+* @section                                body, canvas and corset
+*/
+
+body                                      { overflow-y: scroll; }
+#MightyContainer                          { width: 100%; overflow: hidden; }
+
+.corset                                   { overflow: hidden; margin: 0 auto; }
+.corset.singleColumn                      { width: 46.8750em; } /* = 750px (when 1em = 16px ) */
+.corset                                   { width: 100%; } /* fluid layout */
+.corset                                   { width: 61.2500em; } /* = 980px, (when 1em = 16px) */
+
+/**                                       
+* @section                                extra markup for paddings
+*/
+
+.macroPadder                              { padding: .6250em  1.2500em; }
+.microPadder                              { padding: .6250em; }
+
+/**                                       
+* @section                                faux absolute positioning (fap) - lines and columns
+*/
+
+.fapline                                  { position: relative; float: left; width: 100%; display: block; }
+.fapcol                                   { position: relative; float: left; left: 100%; }
+
+/**                                       
+* @section                                1 Col, FAP (100% width)
+*/
+
+.fap-00-100                               { margin-left: -100%; width: 100%; }
+
+/**                                       
+* @section                                2 Col, FAP (50:50)
+*/
+
+.fap-50-50                                { margin-left: -50.0%; width: 50.0%; }
+
+/**                                       
+* @section                                2 Col, FAP (66:33)
+*/
+
+.fap-00-66                                { margin-left: -100%;  width: 66.6666%; }
+.fap-66-33                                { margin-left: -33.3%; width: 33.3333%; }
+
+/**                                       
+* @section                                2 Col, FAP (33:66)
+*/
+
+.fap-66-66                                { margin-left: -66.6666%;  width: 66.6666%; }
+
+/**                                       
+* @section                                3 Cols, FAP (33:33:33)
+*/
+
+.fap-00-33                                { margin-left: -100%;  width: 33.3%; }
+.fap-33-33                                { margin-left: -66.6%; width: 33.3%; }
+.fap-66-33                                { margin-left: -33.3%; width: 33.4%; }
+
+/**                                       
+* @section                                3 Cols, FAP (50:25:25)
+*/
+
+.fap-00-50                                { margin-left: -100%;  width: 50.0%; }
+.fap-50-25                                { margin-left: -50.0%; width: 25.0%; }
+.fap-75-25                                { margin-left: -25.0%; width: 25.0%; }
+
+/**                                       
+* @section                                4 Cols, FAP (25:25:25:25)
+*/
+
+.fap-00-25                                { margin-left: -100%;  width: 25%; }
+.fap-25-25                                { margin-left: -75.0%; width: 25%; }
+.fap-50-25                                { margin-left: -50.0%; width: 25%; }
+.fap-75-25                                { margin-left: -25.0%; width: 25%; }
+
+/**                                       
+* @section                                float classes
+*/
+
+.flR                                      { float: right; }
+
+.flL,                                     
+.c2-1,                                    
+.c2-2,
+.c3-1,                                    
+.c3-2,                                    
+.c3-3,                                    
+.c4-1,                                    
+.c4-2,                                    
+.c4-3,                                    
+.c4-4                                     { float: left; }
+
+/**                                       
+* @section                                2 cols (float) 50:50
+*/
+
+.c2-1,                                    
+.c2-2                                     { width: 50%; }
+
+/**                                       
+* @section                                3 cols (float)
+*/
+
+.c3-1,                                    
+.c3-2,                                    
+.c3-3                                     { width: 33.3%; }
+
+/**                                       
+* @section                                4 cols (float)
+*/
+
+.c4-1,                                    
+.c4-2,                                    
+.c4-3,                                    
+.c4-4                                     { width: 25%; }
+
+/**                                       
+* @section                                layouts based on 'display: inline-block'
+*/
+
+.iblock                                   { display: -moz-inline-stack; /* <-- this is needed for Firefox2 to display inline blocks */ display: inline-block; vertical-align: top; height: 1%; }
+
+/**                                       
+* @section                                Image Lists (default: 100px image width)
+*
+*/
+
+/*                                        Image at right */
+.textImageList li                         { position: relative; width: 100%; overflow: hidden; line-height: 1.5; }
+.textImageList li p                       { margin: 0; }
+.textImageList li ul                      { margin-top: 1.25em; margin-bottom: 0; }
+.textImageList li .imageC                 { float: right; }
+.textImageList li .textC                  { width: auto; float: none; }
+
+.textImageList .til16px .imageC           { width: 16px; }
+.textImageList .til16px .imageC img       { width: 16px; border: none; }
+.textImageList .til16px .textC            { margin-right: 32px; }
+.textImageList .til64px .imageC           { width: 64px; }
+.textImageList .til64px .imageC img       { width: 64px; border: none; } 
+.textImageList .til64px .textC            { margin-right: 80px; }
+.textImageList .til100px .imageC          { width: 102px; } /* <-- image width + 2 + 2 (border)*/
+.textImageList .til100px .imageC img      { width: 100px; } /* <-- image width */
+.textImageList .til100px .textC           { margin-right: 118px; } /* <-- image width + 2 + 2 + 16px (macroPadding)  */
+.textImageList .til200px .imageC          { width: 202px; }
+.textImageList .til200px .imageC img      { width: 200px; }
+.textImageList .til200px .textC           { margin-right: 218px; }
+
+/*                                        Image at left */
+.textImageListR li                        { position: relative; width: 100%; overflow: hidden; line-height: 1.5; }
+.textImageListR li p                      { margin: 0; }
+.textImageListR li ul                     { margin-top: 1.25em; margin-bottom: 0; }
+.textImageListR li .imageC                { float: left; }
+.textImageListR li .textC                 { width: auto; float: none; }
+.textImageListR .til16px .imageC          { width: 16px; }
+.textImageListR .til16px .imageC img      { width: 16px; border: none; }
+.textImageListR .til16px .textC           { margin-left: 32px; }
+.textImageListR .til64px .imageC          { width: 64px; }
+.textImageListR .til64px .imageC img      { width: 64px; border: none; } 
+.textImageListR .til64px .textC           { margin-left: 80px; }
+.textImageListR .til100px .imageC         { width: 102px; } /* <-- image width + 2 + 2 (border)*/
+.textImageListR .til100px .imageC img     { width: 100px; } /* <-- image width */
+.textImageListR .til100px .textC          { margin-left: 118px; } /* <-- image width + 2 + 2 + 16px (macroPadding)  */
+.textImageListR .til200px .imageC         { width: 202px; }
+.textImageListR .til200px .imageC img     { width: 200px; }
+.textImageListR .til200px .textC          { margin-left: 218px; }
+
+/**
+* @section                                Thumbnail Galleries
+*/                                    
+                                      
+.thumbs                                   { width: 100%; overflow: hidden; }
+.thumbs li                                { width: 120px; min-height: 122px; margin: .6250em; padding: .6250em; display: -moz-inline-stack; display: inline-block; vertical-align: top; zoom: 1; *display: inline; _height: 130px; }
+.thumbs li:hover                          { background-color: transparent; }
+.thumbs li .image                         { text-align: center; }
+.thumbs li img                            { width: 114px; }
+.thumbs li h3                             { font: 1em Georgia, serif; min-height: 40px; }
+.thumbs li p                              { margin: 0; font: .875em Arial, sans serif; min-height: 40px; }
+
+/**
+* @section                                Aligning images in articles
+*/                                        
+
+.imgL,
+.imgR                                     { display: block; margin: 0 0 1.25em 1.25em; }
+.imgL                                     { float: left; }
+.imgR                                     { float: right; }
+.imgCenter                                { display: block; margin: 1.25em 0 2em; }
+.imgCenter,                               
+.imgCenter a                              { text-align: center; }

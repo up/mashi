@@ -1,0 +1,125 @@
+/**
+*
+* @note                           css file for Internet Explorer hacks
+* 
+* @appdef                         fapulous framework
+* @app-myapp-theme  
+* @app-myapp-used                 True
+* @media                          screen
+* @valid                          true
+* 
+* @author                         Alp Uçkan
+* @version                        1.1
+* @link                           http://fapulous.77elements.net/
+* @copyright                      Copyright(c) by Alp Uçkan
+* @license                        http://sam.zoy.org/wtfpl/
+* 
+* @date                           2008-09-22
+* @lastmodified                   2010-04-09 15:58
+*/
+
+/**
+* @section                        fixing escaping floats bug in IE6 / IE7
+*                                 http://www.positioniseverything.net/explorer/escape-floats.html
+*/
+
+body                              { height: 1%; } 
+
+
+/**
+* @section                        font size fix in IE6
+*/
+
+input, select, th, td             { font-size: 1em; }
+
+/**
+* @section                        resize bug in IE6
+*                                 http://friendlybit.com/css/ie6-resize-bug/
+*/
+
+body                              { position: relative; } 
+
+/**
+* @section                        no forced scroll bars in IE6 / IE7
+*/
+
+body                              { o\verflow: visible; } 
+
+/**
+* @section                        clearing floats (for IE6 + IE7)
+*                                 http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
+*/
+
+* html .clearfix                  { zoom: 1; }
+*:first-child+html .clearfix      { zoom: 1; }
+
+/**
+* @section                        gaining Layout in IE
+*                                 
+*/
+
+* html .haslayout                 { height: 0; }
+*:first-child+html .haslayout     { min-height: 0; }
+
+
+/**
+* @section                        floating elements in IE6
+*/
+
+* html .flL,
+* html .flR,
+* html .imgL,
+* html .imgR,
+* html .c2-1,
+* html .c2-2,
+* html .c3-1,
+* html .c3-2,
+* html .c3-3,
+* html .c4-1,
+* html .c4-2,
+* html .c4-3,
+* html .c4-4                      { zoom: 1; position: relative; display: inline; /* fixes double float margin bug */ }
+
+/**
+* @section                        fixing Disappearing List-Background Bug in IE6
+*                                 http://www.positioniseverything.net/explorer/ie-listbug.html
+*/
+
+* html ul,
+* html ol,
+* html dl                         { position: relative; }
+
+/**
+* @section                        fixing :hover on any element for IE6
+*                                 http://www.xs4all.nl/~peterned/csshover.html
+*/
+
+* html body                       { behavior: url(/js/ie6/csshover3.htc); }
+
+/**
+* @section                        IE PNG Alpha Fix v2.0 Alpha 4 for IE6
+*                                 http://www.twinhelix.com/css/iepngfix/
+*/
+
+* html div.fapulousBox            { behavior: url(include/iepngfix/iepngfix.htc); }
+
+/**                                       
+* @section                        layouts based on 'display: inline-block'
+*/
+
+* html .iblock                    { display: inline; }
+*:first-child+html .iblock        { display: inline; }
+
+/**
+*                                 for other Browsers see Paul Irish's "Comprehensive List of Browser-Specific CSS Hacks":
+*                                 http://paulirish.com/2009/browser-specific-css-hacks/
+*                                 
+*                                 List of IE Bugs
+*                                 See "The weird and wonderful world of Internet Explorer": http://www.positioniseverything.net/explorer.html
+*
+*/
+
+/**
+* @section                        making HTML5 elements stylable in IEs
+*                                 see: http://html5doctor.com/how-to-get-html5-working-in-ie-and-firefox-2/
+*/

@@ -1,0 +1,132 @@
+/**
+*
+* @note                               css file for buttons
+*                                     
+* @appdef                             fapulous framework
+* @app-myapp-theme                    
+* @app-myapp-used                     True
+* @media                              screen
+* @valid                              true
+*                                     
+* @author                             Alp Uçkan
+* @version                            1.1
+* @link                               http://fapulous.77elements.net/
+* @copyright                          Copyright(c) by Alp Uçkan
+* @license                            http://sam.zoy.org/wtfpl/
+*                                     
+* @date                               2010-04-10
+* @lastmodified                       2010-04-10 15:57
+*                                     
+* @colordef                           rgb(0,0,0); Black; Text
+* @colordef                           rgb(255,255,255); White; Background
+*
+/
+
+/**
+* @section                            CSS3 button with fall back for IE6 - IE8
+*                                     
+*                                     Markup:
+*                                     
+*                                     as a hyperlink:
+*                                     
+*                                     <a class="btn" href="link">
+*                                       <span class="b">Button Text</span>
+*                                     </a>
+*                                     
+*                                     as a submit button (javascript required):
+*                                     
+*                                     <a class="btn" onmouseup="this.blur();" href="javascript:document.FormID.submit();">
+*                                       <span class="b">Button Text</span>
+*                                     </a>
+*
+*/
+
+a.btn                                 { display: -moz-inline-stack; /* <-- this is needed for Firefox2 to display inline blocks */ display: inline-block; height: 100%; padding-left: 9px; background: transparent url('/img/site/btn/btnl.png') no-repeat scroll top left; font-weight: bold; text-decoration: none; white-space: nowrap; }
+a.btn span.b                          { display: block; background: transparent url('/img/site/btn/btnr.png') no-repeat scroll top right; line-height: 38px; padding: 0 12px 0px 5px; }
+a:link.btn,                           
+a:visited.btn                         { text-decoration: none; }
+
+a:active.btn,
+a:focus.btn                           { background-image: url('/img/site/btn/btnla.png'); }
+a:active.btn span.b,
+a:focus.btn span.b                    { background-image: url('/img/site/btn/btnra.png'); }
+
+a:nth-of-type(1n).btn                 { padding: .1875em .6250em; background: none; background-color: #eee;
+                                        border: 1px solid #fff; -webkit-border-radius: .4375em; -moz-border-radius: .4375em; border-radius: .4375em;
+                                        background: -webkit-gradient( linear, left bottom, left top, color-stop(0.01, rgb(197,206,209)), color-stop(0.33, rgb(232,236,237)), color-stop(1, rgb(255,255,255)) ); background: -moz-linear-gradient( center bottom, rgb(197,206,209) 1%, rgb(232,236,237) 33%, rgb(255,255,255) 100% );
+                                        -webkit-box-shadow: .125em .125em .4375em  #cfcfcf; -moz-box-shadow: .125em .125em .4375em #cfcfcf; box-shadow: .125em .125em .4375em #cfcfcf; }
+a:active:nth-of-type(1n).btn,
+a:focus:nth-of-type(1n).btn           { background: none; background-color: #fff; background: -webkit-gradient( linear, left bottom, left top, color-stop(0.01, rgb(255,255,255)), color-stop(0.42, rgb(232,236,237)), color-stop(1, rgb(197,206,209)) ); background: -moz-linear-gradient( center bottom, rgb(255,255,255) 1%, rgb(232,236,237) 42%, rgb(197,206,209) 100% ); }
+a:nth-of-type(1n).btn span.b          { display: inline; background: none; line-height: inherit; padding: 0; }
+a:active:nth-of-type(1n).btn span.b,
+a:focus:nth-of-type(1n).btn span.b    { background-image: none; }
+
+/**
+* @section                            Sliding doors button
+*                                     
+*                                     Markup:
+*                                     
+*                                     as a hyperlink:
+*                                     
+*                                     <a class="obtn" href="link">
+*                                       <span class="b">Button Text</span>
+*                                     </a>
+*                                     
+*                                     as a submit button (javascript required):
+*                                     
+*                                     <a class="obtn" onmouseup="this.blur();" href="javascript:document.FormID.submit();">
+*                                       <span class="b">Button Text</span>
+*                                     </a>
+*
+*/
+
+
+a.obtn                                { display: -moz-inline-stack; /* <-- this is needed for Firefox2 to display inline blocks */ display: inline-block; height: 100%; padding-left: 9px; background: transparent url('/img/site/btn/btnl.png') no-repeat scroll top left; font-weight: bold; text-decoration: none; white-space: nowrap; }
+a.obtn span.b                         { display: block; background: transparent url('/img/site/btn/btnr.png') no-repeat scroll top right; line-height: 38px; padding: 0 12px 0px 5px; }
+a:link.obtn,                           
+a:visited.obtn                        { text-decoration: none; }
+
+a:active.obtn,
+a:focus.obtn                          { background-image: url('/img/site/btn/btnla.png'); }
+a:active.obtn span.b,
+a:focus.obtn span.b                   { background-image: url('/img/site/btn/btnra.png'); }
+
+/**
+* @section                            CSS3-only button
+*                                     
+*                                     Markup:
+*                                     
+*                                     as a hyperlink:
+*                                     
+*                                     <a class="mbtn" href="link">
+*                                       Button Text
+*                                     </a>
+*                                     
+*                                     as a submit button (javascript required):
+*                                     
+*                                     <a class="mbtn" onmouseup="this.blur();" href="javascript:document.FormID.submit();">
+*                                       Button Text
+*                                     </a>
+*
+*/
+
+a.mbtn                                { display: inline-block; padding: .1875em .4375em; font-weight: bold; text-decoration: none; white-space: nowrap; background-color: #eee; border: 1px solid #c5cde1; }
+a:nth-of-type(1n).mbtn                { border: 1px solid #fff; -webkit-border-radius: .4375em; -moz-border-radius: .4375em; border-radius: .4375em;
+                                        background: -webkit-gradient( linear, left bottom, left top, color-stop(0.01, rgb(197,206,209)), color-stop(0.33, rgb(232,236,237)), color-stop(1, rgb(255,255,255)) ); background: -moz-linear-gradient( center bottom, rgb(197,206,209) 1%, rgb(232,236,237) 33%, rgb(255,255,255) 100% );
+                                        -webkit-box-shadow: .125em .125em .4375em  #cfcfcf; -moz-box-shadow: .125em .125em .4375em #cfcfcf; box-shadow: .125em .125em .4375em #cfcfcf; }
+a:active.mbtn,
+a:focus.mbtn                          { background-color: #fff; }
+a:active:nth-of-type(1n).mbtn,
+a:focus:nth-of-type(1n).mbtn          { background: -webkit-gradient( linear, left bottom, left top, color-stop(0.01, rgb(255,255,255)), color-stop(0.42, rgb(232,236,237)), color-stop(1, rgb(197,206,209)) ); background: -moz-linear-gradient( center bottom, rgb(255,255,255) 1%, rgb(232,236,237) 42%, rgb(197,206,209) 100% ); }
+
+/**
+* @section                            IE hacks
+*
+*/
+
+* html a.btn,
+* html a.obtn,
+* html a.mbtn                         { display: inline; }
+*:first-child+html a.btn,
+*:first-child+html a.obtn,
+*:first-child+html a.mbtn             { display: inline; }

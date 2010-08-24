@@ -1,0 +1,47 @@
+#Module Reference - mashi.preloader
+
+The module 'Preloader' preloads all images used in frames or framesets (.png / .jpg / .jpeg /.gif).
+
+An ajax loader gif will be displayed while loading the images. The app starts automatically after the images are completely loaded when 'animation.start: true' is set in the configuration file.
+
+You can find more infos about the variable 'MASHI_APP_PATH' in the <a href="javascript:loadContent('reference-core/MASHI_APP_PATH', 'Core Reference » MASHI_APP_PATH')">MASHI_APP_PATH reference</a>.
+
+#####Integration
+
+	mashi.module('mashi.preloader');
+	
+
+#####Example IMG Tag
+
+	app.add( 2000,
+	function() {
+      app.set({
+        html: '<img alt="" src="' + MASHI_APP_PATH + 'content/images/hamlet.png" />'
+      });
+	});
+	
+#####Example Frame Background Image
+
+	app.add( 1000,
+	function() {
+	  app.set({
+	    style: {
+		  backgroundImage: "url(" + MASHI_APP_PATH + "content/images/stage.jpg)"
+		}
+	  });
+	});
+
+#####Example Object Background Image
+
+	app.add( 1000,
+	function() {
+	  KING = new mashi.object({
+	    id: "king",
+		style: {
+		  backgroundImage: "url(" + MASHI_APP_PATH + "content/images/kingofdenmark.png)"
+		}
+	  });
+	});
+
+	
+

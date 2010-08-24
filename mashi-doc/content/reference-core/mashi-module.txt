@@ -1,0 +1,16 @@
+#Core Reference - mashi.module
+
+Load module method
+
+#####Syntax
+
+	mashi.module(MODULE-NAME);
+	
+#####Example
+
+	var app = new mashi.application();
+
+	/* load modules */
+	mashi.module('mashi.preloader');
+	mashi.module('mashi.controls');
+

@@ -1,0 +1,48 @@
+/**
+*
+* @note                           css file for common elements
+* 
+* @appdef                         fapulous framework
+* @app-myapp-theme  
+* @app-myapp-used                 True
+* @media                          screen
+* @valid                          true
+* 
+* @author                         Alp Uçkan
+* @version                        1.1
+* @link                           http://fapulous.77elements.net/
+* @copyright                      Copyright(c) by Alp Uçkan
+* @license                        http://sam.zoy.org/wtfpl/
+* 
+* @date                           2008-09-22
+* @lastmodified                   2010-04-09 16:23
+* 
+* @colordef                       rgb(0,0,0); Black; Text
+* @colordef                       rgb(255,255,255); White; Background
+*
+/
+
+/**
+* @section                        clearing floats
+*
+*                                 http://www.positioniseverything.net/easyclearing.html
+*/
+
+.cf:after                         { content: " "; display: block; height: 0; font-size: 0; clear: both; visibility: hidden; }
+                        
+/*                                http://www.quirksmode.org/css/clearing.html */
+/*                                if overflow: hidden; causes problems use another BFC property http://colinaarts.com/articles/the-magic-of-overflow-hidden/ */
+.scf                              { width: 100%; overflow: hidden; }
+
+/**
+* @section                        hiding elements (from user, bots and screenreaders)
+*/
+
+.hide                             { display: none; }
+
+/**
+* @section                        moving elements out of view port, while staying accessible for bots and screenreaders
+*/
+
+.moveout                          { position: absolute; display: block; height: 0; line-height: 0; text-indent: -10000%; }
+

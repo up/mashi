@@ -1,0 +1,25 @@
+#Frequently Asked Questions
+
+#####Do I need a plugin to run Mashi apps?
+
+No. Mashi apps run in every standards compliant web browser with JavaScript activated. Mashi apps are successfully tested with IE 5.5 and higher, Firefox 3, Safari (PC, Mac, iPad, iPhone, iPod), Opera and Google Chrome.
+
+#####What do I need to develop Mashi apps?
+
+You need just a UTF-8 capable text editor. There are no special Mashi editors available yet. But we are working on that.
+
+#####What is the difference between Mashi modules and Mashi plugins?
+
+Mashi modules are 'official' extensions written according to certain coding conventions. Mashi plugins are JavaScript extensions that may be written in any way and style. Developers who write interesting Mashi plugins and apply the Mashi coding conventions have a big chance that their plugin may be turned to an official module in future.
+
+#####Do I have to know JavaScript to develop Mashi apps?
+
+You just need some basic JavaScript knowledge to develop Mashi apps. You should know how to embed JavaScript into web pages and it is also good to know something about the JavaScript syntax. But even without this knowledge you can develop Mashi apps by orienting to the examples shown in the Mashi gallery.
+
+#####How can I put my Mashi app into the gallery?
+
+Zip your whole Mashi app directory (with the subdirectories 'application', 'system' and maybe 'plugins') and upload it with the <a href="http://mashi.tv/community/account.php?PostBackAction=MashiAppUploader">Mashi App Uploader</a> in the community area. There is also a special how-to on this topic: <a href="javascript:loadContent('community/publish-your-app', 'Publish your app')">Publish your app</a>.
+
+#####What about licencing issues?
+
+Mashi is free open source software dual-licenced under AFL and BSD. Please read the <a href="javascript:loadContent('/LICENSE', 'License')">Licence</a> for more information.

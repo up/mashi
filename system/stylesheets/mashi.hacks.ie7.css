@@ -1,0 +1,20 @@
+#progressIndicator {
+  height: 48%;
+}
+#textframe_gp { 
+  overflow: hidden; 
+  height:100%;
+  position: relative;
+}
+#textframe_p { 
+  margin-top: expression((document.getElementById('textframe_gp').offsetHeight - document.getElementById('textframe_p').offsetHeight)/2);
+} 
+
+#textframe ul,
+#textframe li {
+	margin: 0 50px;
+	padding: 0 50px;
+}
+
+
+

@@ -1,0 +1,38 @@
+#Features
+
+#####Timeline-driven movies and animations
+
+Webstandards - HTML, CSS und JavaScript - offer a lot of possibilities to present information and allow interaction. It is not possible to do this with an exact timing though like it is in other plugin-based technologies.
+
+The Mashi Toolkit tries to fill this gap and provides an easy-to-learn way to make timeline-driven animations based on web standards.
+
+
+#####Presentation controls
+
+Mashi provides elements for controlling movies, presentations or slideshows. These control buttons are placable anywhere inside the Mashi app and react depending on the actual state of the app.
+
+
+#####Extendable via Plugins
+
+Mashi provides a couple of methods for e.g. moving objects, letting ojects appear/disappear. Authors who need more methods can write their own plugins to extend Mashi's functionality.
+
+Plugin developers can publish and share their plugins on the Mashi web site.
+
+
+#####Supports Canvas
+
+Canvas is a new design element that comes with HTML5 and is supported by most of the modern web browsers allready. With canvas you can create graphics, vectors and simple animations dynamically. Mashi provides a canvas layer so time-dependent animations can be made and combined with other elements easily.
+
+
+#####No frameworks required - but feel free to use your favorite!
+
+Mashi requires no other JS framework or toolkit. The only exception is the fading of transparent PNG images in Internet Explorer. For this we use jQuery at this time.
+
+But feel free to use your own favorite JS framework together with Mashi. Mashi's code is encapsulated in its own namespace to avoid conflicts with other frameworks.
+
+
+#####Community-driven development and support
+
+We, the Mashi developers, are no corporation, just two freelance web developers who made Mashi in their spare time in the last 10 months. We would very much welcome any developers, story tellers, graphics designers or anybody who likes to participate in the further development of Mashi.
+
+Any kind of feedback is much appreciated. Send us your impressions, critics, bug reports or ideas either directly or in our forums.

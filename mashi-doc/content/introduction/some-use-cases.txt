@@ -1,0 +1,35 @@
+#Some Use Cases
+
+#####Story Telling
+
+You have a story to tell? Writing long texts are too static and making video movies too expensive? Then Mashi is the right medium for you. Write your story board with all scenes, choose the right images for your story and start makeing your own movie app with a simple text editor.
+
+#####Product Presentation
+
+Every product has its strong sides that need to be presented in the best way possible. Like front and back view, details or color variations and comprehensive descriptions. All these presented on a web page can take a strong part in delivering the information potential clients need to know about your product. Mashi makes this possible in the most interactive way that JavaScript can handle.
+
+
+#####Advertising
+
+Animated ad banners based on web standards. Even there, where no Flash is allowed. With Mashi you can make every kind of banner in any size you need. There is no plugin, extra scriting or elements needed to display the banner.
+
+
+#####Slideshow
+
+Write your presentations with a text editor. Just choose a catchy background image and compose your presentation in normal (X)HTML. You can save the presentation on a usual web server (no server-side scripting like PHP, Ruby on Rails or CGI needed) or your usb stick to use it anytime you need. The only thing you need then is a JavaScript capable web browser.
+
+
+#####E-Learning
+
+Mashi provides an easy API to jump to a certain frame. With this given it is very easy to develop e-learning applications. At this time you need some JavaScript knowledge to develop multiple choice questions. We will provide helpers to make this kind of tasks easier in a future version.
+
+#####Online Games
+
+With Mashi JavaScript experts can develop online games. You can use frames for different game levels for example.
+
+
+
+
+
+
+

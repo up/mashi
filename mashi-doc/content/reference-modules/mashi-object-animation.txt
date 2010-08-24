@@ -1,0 +1,82 @@
+#Module Reference - mashi.object.animation
+
+Extends the 'mashi.object' with a method for animation.
+
+#####Integration
+
+Note: mashi.object does not have to be explicitly loaded, because the extensions automatically loads the parent module.
+
+	mashi.module('mashi.object.animation');
+	
+#####Methods
+
+######moveTo()
+
+Moves the object to the desired position.
+
+	OBJECT.moveTo({
+	  left: STRING,     // optional - CSS unit
+	  top: STRING,      // optional - CSS unit
+	  delay: INTEGER    // optional - milliseconds (default is 1)
+	});
+	
+######scrollTo()
+
+Moves the object to the desired position in 1-pixel-steps. Usefull for panorama views or in cases where the background shall move slowly.
+
+	OBJECT.scrollTo({
+	  left: STRING,     // optional - CSS unit
+	  top: STRING,      // optional - CSS unit
+	  delay: INTEGER    // optional - milliseconds (default is 1)
+	});
+
+######appear()
+
+The objects appears in the desired position. This happens with the CSS property 'opacity'. Default values are the same as for the fading effect for frames (when no values are set).
+
+	OBJECT.appear({
+	  left: STRING,     // optional - CSS unit
+	  top: STRING,      // optional - CSS unit
+	  steps: INTEGER    // optional
+	  start: FLOAT      // optional (Opacity value between 0 and 1)
+	  duration: INTEGER // optional - milliseconds (default is 1)
+	});
+
+######disappear()
+
+The objects disappears in the desired position. This happens with the CSS property 'opacity'. Default values are the same as for the fading effect for frames (when no values are set).
+
+	OBJECT.disappear({
+	  left: STRING,     // optional - CSS unit
+	  top: STRING,      // optional - CSS unit
+	  steps: INTEGER    // optional
+	  start: FLOAT      // optional (Opacity value between 0 and 1)
+	  duration: INTEGER // optional - milliseconds (default is 1)
+	});
+
+
+#####Examples:	
+	
+	GHOST.appear({
+	  left: "490px",
+	  top: "98px",
+	  duration: 1500
+	});
+
+	GHOST.disappear();
+    
+	GHOST.moveTo({
+	  left: "490px",
+	  top: "98px"
+	});
+
+	MyObjects.background.scrollTo({
+	  left: "490px",
+	  top: "98px",
+	  delay: 20
+	});
+
+
+
+
+

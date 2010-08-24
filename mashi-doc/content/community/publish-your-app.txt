@@ -1,0 +1,22 @@
+#Publish your app
+
+If you want to share your Mashi app with others just use the Mashi app uploader inside the community area. We will publish your app after a short review so that it is viewable in the <a href="http://mashi.tv/gallery">Mashi gallery</a>.
+
+This is how the Mashi app uploader works in detail:
+
+* Zip your Mashi app directory
+* Log in to the <a href="http://mashi.tv/community/people.php">Mashi commnity</a> (<a href="http://mashi.tv/community/people.php?PostBackAction=ApplyForm">sign up here</a> for free to become a Mashi community member)
+* Click "Account" in the community menu, then <a href="http://mashi.tv/community/account.php?PostBackAction=MashiAppUploader">"Mashi App Uploader"</a>
+* Fill out the form and click the "Upload" button. You're done.
+
+We will recieve a short message about your upload, review it and then publish it in the Mashi gallery.
+
+## Mashi gallery publication conditions
+
+- The app must run in all browsers >= IE7.
+- The app should not be too simple (it does not have to be a big art work though)
+- The app should be safe-for-work and must not discriminate people because of their origin, color of skin or religion.
+
+## Trouble shooting
+
+If you are experiencing problems with the Mashi app uploader or your app does not get published within 3 days <a href="http://mashi.tv/community/?CategoryID=3">drop us a line</a>.
