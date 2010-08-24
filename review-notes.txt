@@ -1,0 +1,102 @@
+Usability-Review des mashi-Frameworks aus Anwendersicht eines Frontent-Entwicklers mit begrenzten JS-Fähigkeiten
+________________________________________________________________________________________________________________
+
+0) ALLGEMEINES ZUR CROSS-BROWSER-KOMPATIBILITÄT
+
+Alle Bespiele laufen nicht in IE6 und IE7
+Die Timeline-Demo läuft nicht in IE8 und fehlerhaft in Opera 10.10/win und Opera 10.10/mac (bleibt bei <div id="one> stehen) und Google Chrome 4/win und Google Chrome 4/mac
+
+
+1) TIMELINE-DEMO (/mashi/examples/timeline.htm)
+
+sleep-Funktion in script.php
+
+Als Frontend-Entwickler hätte ich erwartet, dass sich den Wert für die sleep-Funktion aus der script.php im Funktionsaufruf auf der timeline.htm befindet. Statt
+
+timeline.add('auto', function() { //auto = Frame steuert Ende, ansonsten 2000 = 2 Sekunden
+	callFunc('two');
+});
+
+hätte ich so etwas wie
+
+timeline.add('auto', 3, function() {
+	callFunc('two');
+});
+
+erwartet.
+
+2) PANORAMA-DEMO (/mashi/examples/panorama.htm)
+
+Die meisten Parameter in der berlin.js sind selbsterklärend, bis auf
+
+panorama.scrollTo(-4208, 0)
+
+Wie kommt dieser Wert -4208 zu Stande? Ich hätte erwartet, dass dieser Wert in Bezug zur Breite des Panorama-Bildes steht (5200px), was aber nicht der Fall zu sein scheint.
+
+5200 - Breite des Auschnits = 4208
+
+3) THEATER
+
+a) die Kommentare in story.js (und anderen Dateien) müssen aussagekräftiger werden
+   statt nur
+   
+   // ....................................................................................
+   
+   etwas wie 
+   
+   // Frame 1
+
+b) Bessere Dokumentation im Quellcode nötig, um zu verstehen, was etwa KING.moveTo(90, 98); bedeutet. Einheiten müssen nicht unbedingt mitgegeben werden (da es immer um Pixel geht), aber eine Erklärung, wofür der erste und der zweite Wert steht.
+
+c) ebenso zu .add(1400, (Was beudetet die Zahl 1400?)
+
+d) Gibt es einen Debugging- oder Einzelschritt-Modus? Wenn man Frames von späteren Zeiteinheiten bearbeitet, muss man den ganzen Film bis dahin abspielen lassen, was die Entwicklung etwas mühsam macht. Wie kann man den Film testweise von Frame X bis Y ablaufen lassen?
+
+4) PRESENTATION
+
+a) Wofür ist die textreplacement.htm? In der Presäntation wird die textreplacement.xml verwendet; günstiger wäre es, wenn man direkt die textreplacement.htm einbinden könnte, weil
+        1. bekannteres Format für Frontender
+        2. zugänglichere Alternativversion für Clients ohne JS (accessibility)
+
+b) Bessere inline-Doku im Einbindungscode auf der presentation.htm notwendig, damit man etwa auch alternative Wert ausprobieren kann, etwa bei
+
+        buttons: {
+    			type: 'slideshow'  // types: slideshow, xyz, etc
+    		}
+
+Zweck: Das Nachschlagen in der Dokumentation verringern, "Spieltrieb" direkter bedienen.
+
+c) Kann man 
+
+    var headID = document.getElementsByTagName("head")[0];         
+    var cssNode = document.createElement('link');
+    cssNode.type = 'text/css';
+    cssNode.rel = 'stylesheet';
+    cssNode.href = '../stylesheets/slideshow.css';
+    cssNode.media = 'screen';
+    headID.appendChild(cssNode);
+    
+    in der textreplacement.js etwas HTML-naher ausdrücken?
+
+5) CANVAS
+
+a) Jedes Canvas-Objekt sollte einen identifizierenden Namen haben, etwa
+
+    MO.add(50,
+    function() {
+      context.name = "green_rectangle"
+      context.fillStyle = "green";
+      context.fillRect(40, 70, 100, 100);
+    });
+    
+    ansonsten kann man sie nur durch die Reihenfolge der Objekte oder beschreibende Attribute wie "green" identifizieren.
+
+b) Folgende "Abhängigkeit" ist mir aufgefallen:
+  
+   Wenn das erste Objekt eine Rotation hat (context.rotate(-0.11);), dann wirkt sich das auch auf die anderen Objekte aus.
+   
+   Gibt es eine Möglichkeit, die Vererbung abzuschalten? In einigen Fällen könnte es haarig werden, wenn nur das erste Objekt rotiert werden soll, aber alle anderen nicht. Man müsste dann diesen Rotationswert in jedem Objekt wieder zurücksetzen.
+   
+6) i18n
+
+Kein unverständlichen Punkte, nur kleine Validierungsfehler im Demo-Markup
