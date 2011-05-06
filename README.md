@@ -76,10 +76,6 @@ Copyright © 2008-2011 Uli Preuss
 
 The Mashi Timeline Toolkit is free software; you can redistribute it and/or modify it 
 under the terms of the version 2 of the GNU General Public License (the "GPL"). 
-For (re)distribution without GPL ask for our commercial license.    
-
-The Mashi Timeline Toolkit is free software; you can redistribute and/or modify it 
-under the terms of the version 2 of the GNU General Public License (the "GPL"). 
 For (re)distribution without GPL ask for our commercial license.
 
 Read the [full licence text](http://mashi.tv/LICENSE.md).
