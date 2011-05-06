@@ -1,0 +1,36 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Mashi Minify Local Test</title>
+	<link rel="stylesheet" type="text/css" href="tests.css" />
+</head>
+<body>
+	<div id="outer">
+		<div id="container">
+			<div id="inner">
+
+				<div id="splash">
+					<div id="app" class="mashi">
+						<p style="text-align: center; padding-top: 132px">Loading App ..<p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--
+	<script type="text/javascript" src="../system/javascripts/libs/jquery.js"></script>
+	-->
+	<script type="text/javascript" src="../system/javascripts/mashi.min.js"></script>
+	<script type="text/javascript">
+	var app = new mashi.application();
+	app.distributed = false;
+	</script>
+	<script type="text/javascript" src="init.js"></script>
+
+</body>
+</html>

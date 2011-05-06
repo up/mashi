@@ -1,105 +1,65 @@
-
-
-/* ### MODULE CORE ################################################################## */
+/* MASHI CORE */
 
 .mashi {
-	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
-  /*width: 100%;*/
-	height: 244px;
-	width: 956px;
-	/*height: 100%;*/
-  /*padding: 5px; */ 
+  width: 100%;
+  height: 100%;
   background: transparent;
   overflow: hidden;
   position: absolute;
-  /*border: 1px solid #cecece;*/
 }
-#textframe_gp[id] { /* all exept IE6 */
-  display: table;
-}
-#textframe_p[id] { /* all exept IE6 */
-  display: table-cell; 
-  vertical-align: middle; 
-  position: static;
-}
-		
-/*
-#textframe { 
-  _position: relative; 
-  _top: -50%; 
-  _text-align: left;
-} 
-*/
 
 #textframe {
   font-size: 45px;
   font-weight: bold;
- 	color: white;
- 	text-align: center; 	
-}
-#textframe span {
-  font-size: 12px;
-  display: block;
-  margin-bottom: 4px;
-}
-#textframe span.gray {
-  font-size: 21px;
-  color: gray;
-}
-#textframe em {
-  font-size: 12px;
-  color: gray;
-  font-style: normal;
+  color: white;
+  text-align: center;  
+  padding: 20px;
+  line-height: 1em;
 }
 
-#textframe  a {
-  border: none;
-	text-decoration: none;
-	display:inline;
-	/*
-  padding: 2px 5px;
-  background: white;
-  color: #666;
-  font-size: 13px;
-  font-weight: bold;
-  margin-left: 2px;
-  */
+#textframe_gp[id] { /* not IE6 */
+  display: table;
 }
-#textframe  a:hover,
-#textframe  a:focus {
-  /*
-  border: 1px solid #fff;
-  background: gray;
-  color: #fff;
-  */
+#textframe_p[id] { /* not IE6 */
+  display: table-cell; 
+  vertical-align: middle; 
+  position: static;
 }
 
-/* ### MODULE PRELOADER ############################################################## */
+
+/* MASHI MODULE PRELOADER */
+
 .preloadImages,
 #mContainer {
-  visibility:hidden;
+  visibility: hidden;
 }
 
 #progressIndicator {
-  background: url(../images/loader.gif) center center no-repeat;
-  /*padding: 10px 0;*/
+  background: url(../images/loader.gif) center top no-repeat;
   text-align: center;
-  height: 48%;
+  padding-top: 13px;
+  height: 50px;
   font-size: 8px;
 }
 
 
-/* ### MODULE CONTROLS ################################################################ */
+/* MASHI MODULE CONTROLS */
 
-#mashi-controls {
-  
-}
+#mashi-controls {}
+
 #mashi-controls a {
+  display: inline-block;
   border: 1px solid #666;  
-	display:inline-block;
   width:33px;
   height:20px;
+  margin-left: 3px;
+  line-height: 12px;
+  font-size: 12px;
+  padding:0;
+  text-decoration: none;
+}
+#mashi-controls:last-child {
+  margin-left: 0px;
 }
 
 #controls-button-start {

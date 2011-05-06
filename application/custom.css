@@ -1,3 +1,405 @@
-/*
- * custom.css
-*/
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+table th {
+  border: 1px solid #eeeeee;
+  padding: 2px 5px;
+}
+table td {
+  border: 1px solid #eeeeee;
+  padding: 2px 5px;
+}
+table th {
+  font-weight: bold;
+  color: #000000;
+  background-color: #eeeeee;
+}
+em { font-style: italic; }
+div.info {
+  margin-top: 10px;
+  font-size: 19px;
+}
+div.info strong { font-size: 26px; }
+div.info span { color: #aaaaaa; }
+div#tweetLayer {
+  font-size: 13px;
+  text-align: center;
+  padding-left: 170px;
+  padding-bottom: 70px;
+  line-height: 32px;
+}
+div#tweetLayer h3 {
+  margin-top: 8px;
+  font-size: 26px;
+}
+div#tweetLayer p { text-align: center; }
+div#tweetLayer ul {
+  width: 550px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 1em;
+}
+div#tweetLayer ul li {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  margin: 0.25em;
+  padding: 0.5em;
+}
+a.twitter {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #a5d6e8;
+}
+a.twitter p.twitter a:hover { text-decoration: underline; }
+#description {
+  padding: 20px 30px 20px 20px !important;
+  color: #eeeeee;
+  background-color: #000000;
+  opacity: 0.5;
+  text-align: left;
+}
+#snippet pre {
+  border: 1px solid #333738;
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
+  background-color: #282b2e;
+  -moz-box-shadow: inset 8px 8px 8px #222222;
+  -webkit-box-shadow: inset 8px 8px 8px #222222;
+  box-shadow: inset 8px 8px 8px #222222;
+  text-shadow: #000000 4px 4px 10px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+#snippet pre strong { font-size: 17px; }
+#snippet pre code {
+  font-family: "Monaco", "Consolas", "Lucida Console", "Courier New", "Courier";
+  font-size: 15px;
+  line-height: 1.1em;
+  color: #eeeeee;
+}
+#snippet pre code .xml .title { color: #eeeeee; }
+#snippet pre code .string { color: #e20074; }
+#snippet pre code .title { color: #e20074; }
+#snippet pre code .constant { color: #e20074; }
+#snippet pre code .parent { color: #e20074; }
+#snippet pre code .rules .value { color: #e20074; }
+#snippet pre code .rules .value .number { color: #e20074; }
+#snippet pre code .preprocessor { color: #e20074; }
+#snippet pre code .instancevar { color: #e20074; }
+#snippet pre code .aggregate { color: #e20074; }
+#snippet pre code .template_tag { color: #e20074; }
+#snippet pre code .addition { color: #e20074; }
+#snippet pre code .flow { color: #e20074; }
+#snippet pre code .stream { color: #e20074; }
+#snippet pre code .bash .variable { color: #e20074; }
+#snippet pre code .tag .attribute .value { color: steelblue; }
+#snippet pre code .pi { color: steelblue; }
+#snippet pre code .comment { color: green; }
+#snippet pre code .annotation { color: green; }
+#snippet pre code .template_comment { color: green; }
+#snippet pre code .number { color: #008800; }
+#snippet pre code .date { color: #008800; }
+#snippet pre code .regexp { color: #008800; }
+#snippet pre code .literal { color: #008800; }
+#snippet pre code .change { color: #008800; }
+#snippet pre code .label { color: blue; }
+#snippet pre code .decorator { color: blue; }
+#snippet pre code .filter .argument { color: blue; }
+#snippet pre code .localvars { color: blue; }
+#snippet pre code .array { color: blue; }
+#snippet pre code .attr_selector { color: blue; }
+#snippet pre code .important { color: blue; }
+#snippet pre code .pseudo { color: blue; }
+#snippet pre code .doctype { color: blue; }
+#snippet pre code .deletion { color: blue; }
+#snippet pre code .envvar { color: blue; }
+#snippet pre code .shebang { color: blue; }
+#snippet pre code .phpdoc { font-weight: bold; }
+#snippet pre code .keyword { font-weight: bold; }
+#snippet pre code .id { font-weight: bold; }
+#snippet pre code .phpdoc { font-weight: bold; }
+#snippet pre code .title { font-weight: bold; }
+#snippet pre code .built_in { font-weight: bold; }
+#snippet pre code .aggregate { font-weight: bold; }
+#snippet pre code .bash .variable { font-weight: bold; }
+#snippet pre code .keyword { color: YellowGreen; }
+#snippet pre code .html .css { opacity: 0.5; }
+#snippet pre code .html .javascript { opacity: 0.5; }
+#snippet pre code .html .vbscript { opacity: 0.5; }
+#snippet pre code .tag { color: #aaaaaa; }
+#snippet pre code .tag .title { color: #aaaaaa; }
+#snippet pre code .html .php { color: green; }
+.big { font-size: 180px; }
+.about {
+  width: 100%;
+  color: #eeeeee;
+  font-weight: normal;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: left;
+  text-shadow: #eeeeee 0px 0px 13px;
+  padding: 20px;
+}
+.about a {
+  color: lightblue;
+  text-decoration: underline;
+  display: inline-block;
+  padding: 2px 5px;
+  border: 1px dashed transparent;
+}
+.about a:hover {
+  text-decoration: none;
+  border: 1px dashed #cea500;
+  color: #cea500;
+}
+.about h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.about p {
+  text-align: left;
+  font-size: 13px;
+  line-height: 10px;
+  margin: 0 auto 0px;
+  padding: 0 0 3px 0;
+}
+.about p strong {
+  font-weight: bold;
+  color: #ffffff;
+}
+.about ul {
+  width: 70%;
+  text-align: left;
+  margin: 20px auto 17px;
+}
+.about ul li {
+  display: block;
+  font-size: 18px;
+}
+.about ul li:before {
+  content: "•";
+  display: inline-block;
+  margin-right: 5px;
+}
+.download h2 {
+  font-size: 120px;
+  line-height: 80%;
+  font-family: "Trebuchet MS", Arial, sans serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+.docs {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.docs p {
+  font-family: "Trebuchet MS", Arial, sans serif;
+  color: #eeeeee;
+  text-align: left;
+  font-size: 130%;
+}
+.docs a {
+  font-size: 150%;
+  position: relative;
+  display: inline-block;
+  margin: 3px 0;
+  text-decoration: underline;
+  color: #cea500;
+}
+.docs a.normal { font-size: 100%; }
+.docs a:hover {
+  text-decoration: none;
+  color: blue;
+}
+.blog {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+}
+.blog h2 {
+  font-family: "Trebuchet MS";
+  color: #eeeeee;
+  text-align: right;
+}
+.blog p {
+  font-family: "Trebuchet MS";
+  color: #eeeeee;
+  text-align: right;
+}
+.blog p { font-size: 140%; }
+.blog h2 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.blog a {
+  font-size: 200%;
+  line-height: 100%;
+  position: relative;
+  display: inline-block;
+  margin: 3px 0;
+  text-decoration: underline;
+  color: #cea500;
+}
+.blog a.normal { font-size: 100%; }
+.blog a:hover {
+  text-decoration: none;
+  color: blue;
+}
+.labs {
+  width: 390px;
+  margin: 0;
+  padding: 0;
+}
+.labs h2 {
+  font-family: "Trebuchet MS";
+  color: #eeeeee;
+  text-align: left;
+}
+.labs p {
+  font-family: "Trebuchet MS";
+  color: #eeeeee;
+  text-align: left;
+}
+.labs p { font-size: 140%; }
+.labs h2 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.labs a {
+  font-size: 200%;
+  line-height: 100%;
+  position: relative;
+  display: inline-block;
+  margin: 3px 0;
+  text-decoration: underline;
+  color: #cea500;
+}
+.labs a.normal { font-size: 100%; }
+.labs a:hover {
+  text-decoration: none;
+  color: blue;
+}
+.wide {
+  width: 590px;
+  padding-top: 22px;
+  padding-left: 49px;
+}
+#textframe span {
+  color: #aaaaaa;
+  font-weight: bold;
+}
+.note {
+  font-family: "Corbel", sans-serif;
+  text-align: center;
+  width: 380px;
+  margin: 0 auto !important;
+  border: 1px solid #b29105;
+  letter-spacing: inherit !important;
+  line-height: inherit !important;
+  background: #000000;
+  -moz-box-shadow: 0px 0px 20px #666666;
+  -webkit-box-shadow: 0px 0px 20px #666666;
+  opacity: 0.7;
+}
+.note h3 {
+  text-align: left;
+  color: #000000;
+  font-size: 16px !important;
+  background: #b29105;
+  padding: 2px 5px 0px;
+  font-weight: bold;
+}
+.note div {
+  padding: 0px 12px 12px;
+  letter-spacing: inherit !important;
+  font-size: 16px !important;
+  line-height: 1em;
+  color: #eeeeee;
+}
+form {
+  text-align: left;
+  font-size: 1em;
+}
+fieldset {
+  float: left;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: inline-block;
+  width: 400px;
+  padding: 25px;
+}
+fieldset.fm_right {
+  float: right;
+  margin-right: 32px;
+  width: 330px;
+}
+p.fm_input_layer {
+  clear: both;
+  padding-bottom: 48px;
+}
+legend, label {
+  color: #606060;
+  font-weight: bold;
+}
+label {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  margin-bottom: 3px;
+}
+input:focus {
+  background: #000000;
+  border: 1px solid #666666;
+}
+textarea:focus {
+  background: #000000;
+  border: 1px solid #666666;
+}
+input, textarea {
+  float: right;
+  width: 70%;
+  font-size: 1em;
+  color: #ffffff;
+  background: #232323;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+  padding: 4px;
+  font-weight: bold;
+}
+textarea {
+  height: 125px;
+  resize: none;
+}
+input.button {
+  color: #eeeeee;
+  margin-top: 5px;
+  margin-left: 12px;
+  width: auto;
+  cursor: pointer;
+}
+p.description {
+  text-align: left !important;
+  padding: 0 !important;
+  line-height: 20px;
+}
+p#flashnotice {
+  height: 40px;
+  text-align: right;
+  padding-right: 12px;
+  line-height: 20px;
+  width: 100%;
+  margin: 0;
+}

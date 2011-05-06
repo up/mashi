@@ -1,0 +1,87 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Mashi Inline Example</title>
+	<link rel="stylesheet" type="text/css" href="tests.css" />
+</head>
+<body>
+	<div id="outer">
+		<div id="container">
+			<div id="inner">
+
+				<div id="splash">
+					<div id="app" class="mashi">
+						<p style="text-align: center; padding-top: 132px">Loading App ..<p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://mashi-tv.appspot.com/system/javascripts/mashi.min.js"></script>
+	<script type="text/javascript">
+	var shirt, app = new mashi.application();
+	app.distributed = true;
+	mashi.module('all');
+	mashi.frame.fading = false;
+
+	app.add(1000, function() {
+	  app.set({
+	    html: '',
+      style: {
+	      padding: '0 0 50px 0',
+	      fontSize: '15px',
+	      color: '#000000',
+	      lineHeight: '1em'
+      }
+	  });
+
+	  shirt = new mashi.object({
+	    id: "shirt",
+	    style: {
+	      width: "200px",
+	      height: "200px",
+	      left: "-500px",
+	      top: "50px",
+	      backgroundImage: "url(" + MASHI_APP_PATH + "content/images/shirt.png)"
+	    }
+	  });
+	  shirt.moveTo({
+	      left: "362px",
+	      top: "50px"
+	  });
+	});
+	app.add(300, function() {
+	  app.set({
+	    html: '<p>Your<br/>&nbsp;<br/>&nbsp;</p>'
+	  });
+	});
+	app.add(300, function() {
+	  app.set({
+	    html: '<p>Your<br/>content<br/>&nbsp;</p>'
+	  });
+	});
+	app.add(300, function() {
+	  app.set({
+	    html: '<p>Your<br/>content<br/>here.</p>'
+	  });
+	});
+
+	app.isReady(function(){
+	  app.config({
+	    buttons: {
+	        type: 'single'
+	    },
+	    animation: {
+	      accessible: 'text',
+	      start: true
+	    }
+	  });  
+	});
+	</script>
+</body>
+</html>

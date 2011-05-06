@@ -1,0 +1,77 @@
+/*
+Author: uli preuss
+Author URI: http://ulipreuss.eu
+*/
+
+/* mac hide \*/
+html, body {
+	height:100%;
+	width: 100%;
+}
+/* end hide */
+
+body { 
+  font-size: 12px;
+	color: #444;
+	background-color: #111;
+  line-height: 1;
+  overflow: hidden; 
+}
+
+* {
+	font-family: 'Trebuchet MS', Arial, sans serif;
+}
+
+
+a { 
+  color: #FFD59F; 
+}
+
+img {
+	border: none;
+}
+
+#outer {
+  height: 100%;
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+}
+#container {
+  position:relative;
+  *top: 20%;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  height: 256px;
+}
+#inner {
+  width: 980px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+#splash {
+  border: 1px solid #222;
+  padding: 0px; 
+  position: relative;
+  text-align: left;
+}
+
+#splash,
+canvas {
+	width: 910px;
+	height: 304px;
+}
+
+#progressIndicator {
+  padding-top: 19px !important;
+}
+
+p#copyright {
+  margin: 0 10px;
+  text-align: right;
+  font-size: 11px;   
+}
+
