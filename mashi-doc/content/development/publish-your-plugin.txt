@@ -1,3 +1,0 @@
-#Publish your plugin
-
-You have written a Mashi plugin? Please use the <a href="http://mashi.tv/community/account.php?PostBackAction=MashiAppUploader">uploader</a> as described in <a href="javascript:loadContent('community/publish-your-app',%20'Community:%20Publish%20your%20app')">publish your app</a>.

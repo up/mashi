@@ -1,3 +1,0 @@
-#Report bugs
-
-If you found a bug, please report it to the <a href="http://mashi.tv/community/?CategoryID=4">bug forum</a>.

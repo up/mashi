@@ -1,3 +1,0 @@
-#Search results
-
-<div id="file-list"></div>
