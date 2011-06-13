@@ -1154,10 +1154,8 @@ var mashi, _m_, _ma_, _WebKit_, _Safari_, _Chrome_, _Opera_,
       * app.isReady(function () {});
     */ 
     this.isReady = function (callback) {
-      
-      var ival;
-      ival = setInterval(function () {
-        if (_ma_.javascripts.files === _ma_.javascripts.loaded) {
+      var ival = setInterval(function () {
+        if (_ma_.javascripts.loaded >= _ma_.javascripts.files) {
           callback();
           clearInterval(ival);
         }

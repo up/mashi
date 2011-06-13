@@ -1,9 +1,15 @@
 #Release Notes
 Mashi Timeline Toolkit 	
-(http://mashi.tv/releasenotes.md) 
+(http://mashi.tv/REALESENOTES.md) 
 
 -------------------------------------------------------------------------------
-####[2011-06-03: VERSION 1.0.0 - REVISION 20]
+####[2011-06-11: VERSION 1.0.0 - REVISION 21]
+**********************
+
+[FIXED] 'isReady' BUG in IE9
+
+-------------------------------------------------------------------------------
+####[2011-05-03: VERSION 1.0.0 - REVISION 20]
 **********************
 
 Second public release.

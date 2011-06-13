@@ -1,6 +1,7 @@
 # Licence
 
-Mashi - Javascript Timeline Toolkit  
+Mashi - Javascript Timeline Toolkit 
+http://mashi.tv 
 Copyright (c) 2008-2011 Uli Preuss  
 All rights reserved.
 
@@ -32,4 +33,4 @@ commercially licensed software under version 2 of the GNU General Public
 License must enter into a **commercial license agreement** with Mashi.
 
 For questions and more information about this licensing options, please visit
-our website and use the [contact form](http://mashi.tv/index.htm#contact)
+our website and use the [contact form](http://mashi.tv/#contact)
